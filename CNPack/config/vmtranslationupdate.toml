@@ -1,0 +1,14 @@
+[misc]
+devMode = false
+autoSwitchLanguage = true
+checkModPackTranslationUpdate = true
+[resourcePack]
+autoDownloadVMTranslationPack = false
+autoLoadExtraTranslationPack = false
+resourcePackIndex = "DEFAULT"
+extraPackName = ""
+extraPackCustomIndex = 0
+[modInstallCheck]
+i18nUpdateMod = true
+vaultPatcher = false
+textureLocaleRedirector = false

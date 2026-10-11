@@ -1,0 +1,30 @@
+name: Upload Action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  upload:
+    name: Upload
+    environment: PARATRANZ_ENV
+    runs-on: ubuntu-latest
+    env:
+      API_TOKEN: ${{ secrets.API_KEY }}
+      FILE_PATH: ./
+      PROJECT_ID: ${{ vars.ID }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3"
+          cache: pip
+          cache-dependency-path: .github/requirements-ftb.txt
+
+      - name: Install dependencies
+        run: python -m pip install -r .github/requirements-ftb.txt
+
+      - name: Upload To Paratranz
+        run: |
+          python .github/scripts/github2para.py

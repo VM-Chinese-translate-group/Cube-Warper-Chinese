@@ -1,0 +1,20 @@
+# Jetbrains
+.idea
+
+# MacOS Desktop Services Store
+.DS_Store
+.AppleDouble
+.LSOverride
+
+*.zip
+
+# Python
+__pycache__
+build
+dist
+
+# Workflow-generated files
+error_report.html
+diff_report.html
+pr_body.md
+temp_update/

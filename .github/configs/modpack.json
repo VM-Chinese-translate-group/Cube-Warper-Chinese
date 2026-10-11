@@ -1,0 +1,34 @@
+{
+  "configured": false,
+  "packId": 130,
+  "packName": "FTB StoneBlock 4",
+  "versionPattern": "FTB StoneBlock 4 {version}",
+  "mcVersion": "1.20.1", 
+  "loader": "forge",
+  "updateMethod": "cursethebeast",
+  "infoFilePath": "CNPack/modpackinfo.json",
+  "sourceDir": "Source",
+  "paratranz": {
+    "jsonSplits": [],
+    "pathRedirects": []
+  },
+  "attentionList": {
+    "folders": [
+      {
+        "path": "config/ftbquests/quests",
+        "ignoreDeletions": false
+      }
+    ],
+    "filePatterns": [
+      {
+        "pattern": "kubejs/assets/*/lang/en_us.json",
+        "ignoreDeletions": true
+      }
+    ]
+  },
+  "exclusionPatterns": [
+    "**/lang/*.*",
+    "**/dimdungeons/lang/*.*",
+    "!**/lang/en_us.*"
+  ]
+}
