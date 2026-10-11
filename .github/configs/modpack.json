@@ -1,8 +1,8 @@
 {
-  "configured": false,
-  "packId": 130,
-  "packName": "FTB StoneBlock 4",
-  "versionPattern": "FTB StoneBlock 4 {version}",
+  "configured": true,
+  "packId": 1711334,
+  "packName": "Cube Warper",
+  "versionPattern": "Cube Warper {version}",
   "mcVersion": "1.20.1", 
   "loader": "forge",
   "updateMethod": "cursethebeast",
