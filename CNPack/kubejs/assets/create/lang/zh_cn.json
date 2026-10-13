@@ -1,0 +1,11 @@
+{
+  "block.create.rose_quartz_block": "玫瑰石英块",
+  "block.create.rose_quartz_lamp": "玫瑰石英灯",
+  "block.create.rose_quartz_tiles": "玫瑰石英瓦",
+  "block.create.small_rose_quartz_tiles": "玫瑰石英细瓦",
+  "create.ponder.rose_quartz_lamp.header": "玫瑰石英灯",
+  "create.ponder.rose_quartz_lamp.text_1": "在红石信号上激活玫瑰石英灯",
+  "item.create.polished_rose_quartz": "磨制玫瑰石英",
+  "item.create.rose_quartz": "玫瑰石英",
+  "advancement.create.rose_quartz.desc": "打磨一些玫瑰石英"
+}
