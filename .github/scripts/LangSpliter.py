@@ -11,8 +11,7 @@ LangSpliter 命令行工具
      python LangSpliter.py split
    - 指定自定义路径:
      python LangSpliter.py split --source-lang "path/to/en_us.snbt" --output-dir "path/to/output"
-   - 默认将单行列表展平 (不加数字后缀)，关闭时使用:
-     python LangSpliter.py split --no-flatten-single-lines
+   - 所有文本列表合并为一个条目，以换行符连接，不添加数字后缀。
 
 2. 合并 JSON 文件为 SNBT 文件:
    - 使用默认路径:
@@ -53,6 +52,18 @@ INLINE_TEXT_KEY = re.compile(
 )
 
 
+def restore_text(original, entries):
+    """Restore joined lists; also accept previously uploaded numbered entries."""
+    entries = sorted(entries)
+    if entries[0][0] == 0:
+        text = entries[0][1]
+        if isinstance(original, list):
+            values = [] if not original and text == "" else text.split("\n")
+            return List([String(line) for line in values])
+        return String(text)
+    return List([String(text) for _, text in entries])
+
+
 def iter_chapter_entities(chapter):
     """Yield text-bearing objects without traversing item NBT or components."""
     yield "chapter", chapter
@@ -76,11 +87,7 @@ def extract_inline_text(chapter, output, flatten_single_lines=False):
             if isinstance(value, str):
                 output[key] = str(value)
             elif isinstance(value, list):
-                if flatten_single_lines and len(value) == 1:
-                    output[key] = str(value[0])
-                else:
-                    for index, line in enumerate(value, 1):
-                        output[f"{key}{index:02d}"] = str(line)
+                output[key] = "\n".join(str(line) for line in value)
 
 
 def apply_inline_text(chapter, translations):
@@ -92,13 +99,9 @@ def apply_inline_text(chapter, translations):
             lines = translations.get((scope, str(entity_id), field))
             if not lines or field not in entity:
                 continue
-            values = [text for _, text in sorted(lines)]
-            if isinstance(entity[field], list):
-                entity[field] = List([String(text) for text in values])
-            elif isinstance(entity[field], str):
-                entity[field] = String(values[0])
-            else:
+            if not isinstance(entity[field], (list, str)):
                 continue
+            entity[field] = restore_text(entity[field], lines)
             changed = True
     return changed
 
@@ -132,11 +135,10 @@ def split_and_process_all(
 ):
     """
     一个完整的处理流程，现在会将 chapter.* 条目分发到对应的章节文件中。
-    新增 flatten_single_lines 参数用于控制单行列表的处理方式。
+    所有文本列表以换行符连接，flatten_single_lines 参数仅保留调用兼容。
     """
     print(f"--- 1. 开始拆分和处理 {source_lang_file} ---")
-    if flatten_single_lines:
-        print("  -> 已启用【单行列表展平】模式。")
+    print("  -> 文本列表合并为单个条目，以换行符连接。")
     os.makedirs(output_dir, exist_ok=True)
 
     # 1. 加载源语言文件
@@ -151,18 +153,7 @@ def split_and_process_all(
         lang_data = OrderedDict()
         for key, value in snbt_data.items():
             if isinstance(value, list):
-                # 根据命令行参数选择处理逻辑
-                if flatten_single_lines and len(value) == 1:
-                    # 如果开启了展平功能，且列表只有一个元素，则不加数字后缀
-                    processed_line = unescape_string(str(value[0]))
-                    lang_data[key] = processed_line
-                else:
-                    # 默认行为：为所有行（或当展平功能关闭时）添加数字后缀
-                    for i, line in enumerate(value, 1):
-                        # 将数字格式化为两位，例如 1 -> 01, 10 -> 10
-                        new_key = f"{key}{i:02d}"
-                        processed_line = unescape_string(str(line))
-                        lang_data[new_key] = processed_line
+                lang_data[key] = "\n".join(str(line) for line in value)
             elif isinstance(value, str):
                 processed_value = unescape_string(value)
                 lang_data[key] = processed_value
@@ -381,15 +372,8 @@ def process_item_list_for_components(item_list, list_key_name, output_dict):
                 if "minecraft:lore" in components:
                     lore_list = components["minecraft:lore"]
                     if isinstance(lore_list, list):
-                        for i, lore_line in enumerate(lore_list, 1):
-                            try:
-                                lore_line = lore_line.replace(r"\\", "\\")
-                                lore_line = lore_line.replace(r"\"", '"')
-                            except (json.JSONDecodeError, TypeError):
-                                pass
-                            # 将数字格式化为两位，例如 1 -> 01, 10 -> 10
-                            lang_key = f"{list_key_name}.{current_item_id}.lore{i:02d}"
-                            output_dict[lang_key] = lore_line
+                        lang_key = f"{list_key_name}.{current_item_id}.lore"
+                        output_dict[lang_key] = "\n".join(str(line) for line in lore_list)
 
             # 无论是否找到 'components'，都继续向更深层递归
             for value in data.values():
@@ -479,10 +463,8 @@ def process_chapter_quests(
                             key = f"chapter.{chapter_id}.image.{i}.hover"
                             chapter_output_content[key] = unescape_string(hover_value)
                         elif isinstance(hover_value, list):
-                            for j, line in enumerate(hover_value, 1):
-                                # 将数字格式化为两位，例如 1 -> 01, 10 -> 10
-                                key = f"chapter.{chapter_id}.image.{i}.hover{j:02d}"
-                                chapter_output_content[key] = unescape_string(str(line))
+                            key = f"chapter.{chapter_id}.image.{i}.hover"
+                            chapter_output_content[key] = "\n".join(str(line) for line in hover_value)
 
             # 收集本章节所有相关的任务和奖励语言条目
             for quest in chapter_data.get("quests", []):
@@ -529,10 +511,8 @@ def process_chapter_quests(
                                 feedback_value
                             )
                         elif isinstance(feedback_value, list):
-                            for j, line in enumerate(feedback_value, 1):
-                                # 将数字格式化为两位，例如 1 -> 01, 10 -> 10
-                                key = f"reward.{reward_id}.feedback_message{j:02d}"
-                                chapter_output_content[key] = unescape_string(str(line))
+                            key = f"reward.{reward_id}.feedback_message"
+                            chapter_output_content[key] = "\n".join(str(line) for line in feedback_value)
 
             if not chapter_output_content:
                 continue
@@ -585,7 +565,7 @@ def update_chapter_files_with_components(
     inline_translations = {}
 
     # 无需修改，(\d+) 和 (\d*) 可以正确匹配 01, 02 等
-    lore_pattern = re.compile(r"^(?:tasks|rewards)\.([0-9A-F]+)\.lore(\d+)$")
+    lore_pattern = re.compile(r"^(?:tasks|rewards)\.([0-9A-F]+)\.lore(\d*)$")
     name_pattern = re.compile(r"^(?:tasks|rewards)\.([0-9A-F]+)\.custom_name$")
     feedback_pattern = re.compile(r"^reward\.([0-9A-F]+)\.feedback_message(\d*)$")
     hover_pattern = re.compile(r"^chapter\.([0-9A-F]+)\.image\.(\d+)\.hover(\d*)$")
@@ -608,7 +588,7 @@ def update_chapter_files_with_components(
         if lore_match:
             item_id, lore_index = lore_match.groups()
             mods_by_id.setdefault(item_id, {}).setdefault("lore", []).append(
-                (int(lore_index), value)
+                (int(lore_index) if lore_index else 0, value)
             )
             continue
 
@@ -633,16 +613,11 @@ def update_chapter_files_with_components(
     for item_id in mods_by_id:
         if "lore" in mods_by_id[item_id]:
             mods_by_id[item_id]["lore"].sort(key=lambda x: x[0])
-            mods_by_id[item_id]["lore"] = [v for _, v in mods_by_id[item_id]["lore"]]
     for item_id in feedback_mods_by_id:
         feedback_mods_by_id[item_id].sort(key=lambda x: x[0])
-        feedback_mods_by_id[item_id] = [v for _, v in feedback_mods_by_id[item_id]]
     for chapter_id in hover_mods_by_chapter_id:
         for image_index in hover_mods_by_chapter_id[chapter_id]:
             hover_mods_by_chapter_id[chapter_id][image_index].sort(key=lambda x: x[0])
-            hover_mods_by_chapter_id[chapter_id][image_index] = [
-                v for _, v in hover_mods_by_chapter_id[chapter_id][image_index]
-            ]
 
     # 2. 遍历章节文件，应用修改
     modified_files_count = 0
@@ -665,20 +640,9 @@ def update_chapter_files_with_components(
                 images_list = snbt_data.get("images", List())
                 for img_idx, lines in hover_mods_by_chapter_id[chapter_id].items():
                     if 0 <= img_idx < len(images_list):
-                        original_key = f"chapter.{chapter_id}.image.{img_idx}.hover"
-                        is_multiline = any(
-                            k.startswith(original_key + "01")
-                            for k in component_data.keys()
+                        images_list[img_idx]["hover"] = restore_text(
+                            images_list[img_idx].get("hover", ""), lines
                         )
-
-                        if is_multiline or len(lines) > 1:
-                            # 将 list[str] 转换为 List[String]
-                            images_list[img_idx]["hover"] = List(
-                                [String(line) for line in lines]
-                            )
-                        else:
-                            # 将 str 转换为 String
-                            images_list[img_idx]["hover"] = String(lines[0])
                         file_was_modified[0] = True
 
             def find_and_update_components_recursively(data, item_id, comp_mods):
@@ -696,8 +660,9 @@ def update_chapter_files_with_components(
                             file_was_modified[0] = True
                         if "lore" in modifications:
                             # 将 list[str] 转换为 List[String]，无需手动转义
-                            data["components"][String("minecraft:lore")] = List(
-                                [String(line) for line in modifications["lore"]]
+                            data["components"][String("minecraft:lore")] = restore_text(
+                                data["components"].get("minecraft:lore", []),
+                                modifications["lore"],
                             )
                             file_was_modified[0] = True
                         updated_ids.add(item_id)
@@ -716,17 +681,9 @@ def update_chapter_files_with_components(
                         # 更新 feedback_message
                         if item_id in feed_mods:
                             lines = feed_mods[item_id]
-                            original_key = f"reward.{item_id}.feedback_message"
-                            is_multiline = any(
-                                k.startswith(original_key + "01")
-                                for k in component_data.keys()
+                            data["feedback_message"] = restore_text(
+                                data.get("feedback_message", ""), lines
                             )
-                            if is_multiline or len(lines) > 1:
-                                data["feedback_message"] = List(
-                                    [String(line) for line in lines]
-                                )
-                            else:
-                                data["feedback_message"] = String(lines[0])
                             file_was_modified[0] = True
                             updated_ids.add(item_id)
 
@@ -766,7 +723,8 @@ def update_chapter_files_with_components(
 
 
 def merge_all_to_snbt(
-    json_dir: str, output_snbt_file: str, chapters_dir: str, output_chapters_dir: str
+    json_dir: str, output_snbt_file: str, chapters_dir: str, output_chapters_dir: str,
+    source_lang_file: str = "",
 ):
     """
     合并所有JSON文件为单个SNBT文件。
@@ -800,7 +758,7 @@ def merge_all_to_snbt(
     # 这个正则表达式匹配所有需要被回填到章节文件而不是写入语言文件的键
     # 无需修改，(\d+) 和 (\d*) 可以正确匹配 01, 02 等
     embedded_key_pattern = re.compile(
-        r"^(tasks|rewards)\.[0-9A-F]+\.(custom_name|lore\d+)|"
+        r"^(tasks|rewards)\.[0-9A-F]+\.(custom_name|lore\d*)|"
         r"chapter\.[0-9A-F]+\.image\.\d+\.hover\d*|"
         r"reward\.[0-9A-F]+\.feedback_message\d*$"
     )
@@ -825,8 +783,26 @@ def merge_all_to_snbt(
     temp_multiline = OrderedDict()
     reconstructed_data = OrderedDict()
 
+    # The source preserves the distinction between one-line lists and strings.
+    if not source_lang_file:
+        source_lang_file = (
+            os.path.join(chapters_dir, "..", "lang", "en_us.snbt")
+            if chapters_dir else os.path.join(os.path.dirname(output_snbt_file), "en_us.snbt")
+        )
+    source_data = {}
+    if os.path.isfile(source_lang_file):
+        with open(source_lang_file, encoding="utf-8") as source_file:
+            source_data = snbtlib.loads(source_file.read())
+
     # 只处理标准数据
     for key, value in standard_data.items():
+        if key in source_data:
+            restored = restore_text(source_data[key], [(0, value)])
+            reconstructed_data[key] = restored
+            continue
+        if "\n" in value:
+            reconstructed_data[key] = value.split("\n")
+            continue
         match = multi_line_pattern.match(key)
         if match:
             base_key = match.group(1)
@@ -940,7 +916,7 @@ if __name__ == "__main__":
             "--flatten-single-lines",
             action=argparse.BooleanOptionalAction,
             default=True,
-            help="默认将单行列表展平；使用 --no-flatten-single-lines 可关闭。",
+            help="保留旧调用兼容；所有文本列表始终合并为单个条目。",
         )
 
         # --- 合并任务的参数 (标准逻辑) ---

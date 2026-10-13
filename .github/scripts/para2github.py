@@ -307,7 +307,8 @@ def main() -> None:
         if os.path.isdir(source_chapters_dir):
             print("检测到章节目录，将回写章节、任务及物品内嵌文本...")
             merge_all_to_snbt(
-                json_dir, output_snbt_file, source_chapters_dir, output_chapters_dir
+                json_dir, output_snbt_file, source_chapters_dir, output_chapters_dir,
+                source_lang_file="Source/config/ftbquests/quests/lang/en_us.snbt",
             )
         else:
             print(
@@ -315,7 +316,10 @@ def main() -> None:
             )
 
             # 如果源目录不存在，传入空字符串或None来禁用功能
-            merge_all_to_snbt(json_dir, output_snbt_file, "", "")
+            merge_all_to_snbt(
+                json_dir, output_snbt_file, "", "",
+                source_lang_file="Source/config/ftbquests/quests/lang/en_us.snbt",
+            )
 
         # 合并完成后，清除已合并的临时JSON文件所在的父目录
         cleanup_dir = ftb_quests_lang_dir.parent

@@ -81,8 +81,8 @@
 - 从章节、任务、子任务和奖励提取 `title`、`subtitle`、`description`，按章节生成 `kubejs/assets/quests/lang/en_us_*.json`。
 - 内嵌字段使用 `quest.<ID>.embedded.title` 等独立键，与 `en_us.snbt` 中的语言键共存。
 - 下载译文时，内嵌键按 ID 回写到 `CNPack/config/ftbquests/quests/chapters/*.snbt`，独立语言键仍合并到 `lang/zh_cn.snbt`。
-- 上传脚本和 `LangSpliter.py split` 默认开启单行列表展平；多行列表保留 `01`、`02` 等后缀。回写内嵌字段时保留源字段的字符串或列表类型。
-- 独立运行时，可用 `python .github/scripts/LangSpliter.py split --no-flatten-single-lines` 关闭展平。
+- 所有文本列表（包括描述、hover、lore、反馈文本和独立语言条目）合并为单个条目，以换行符连接。JSON 中显示为 `\n`，不再生成 `01`、`02` 等后缀；回写时按换行恢复列表，保留空行与源字段类型。
+- 旧的数字后缀条目仍可下载合并。`--flatten-single-lines` 参数仅保留调用兼容，不再影响列表处理。
 
 验证：安装 `.github/requirements-ftb.txt` 后运行 `python -m unittest discover -s tests -v`。
 

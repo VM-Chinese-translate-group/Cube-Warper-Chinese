@@ -42,6 +42,7 @@ class InlineQuestsTests(unittest.TestCase):
         splitter.merge_all_to_snbt(
             str(self.output), str(self.zh_lang),
             str(self.chapters), str(self.translated),
+            source_lang_file=str(self.lang),
         )
 
     def test_real_chapters_round_trip(self):
@@ -54,11 +55,11 @@ class InlineQuestsTests(unittest.TestCase):
             entries["quest.30A0ACC1C6D738A8.embedded.title"], "Getting Started"
         )
         self.assertEqual(
-            entries["quest.30A0ACC1C6D738A8.embedded.description01"],
+            entries["quest.30A0ACC1C6D738A8.embedded.description"],
             "Board the Hexahedron and press the big red button!",
         )
         expected_count = sum(
-            len(value) if isinstance(value, list) else 1
+            1
             for file in source.glob("*.snbt")
             for _, entity in splitter.iter_chapter_entities(
                 snbtlib.loads(file.read_text(encoding="utf-8"))
@@ -71,6 +72,10 @@ class InlineQuestsTests(unittest.TestCase):
             sum(bool(splitter.INLINE_TEXT_KEY.fullmatch(key)) for key in entries),
             expected_count,
         )
+        self.assertTrue(all(
+            not splitter.INLINE_TEXT_KEY.fullmatch(key).group(4)
+            for key in entries if splitter.INLINE_TEXT_KEY.fullmatch(key)
+        ))
         self.merge()
         for file in source.glob("*.snbt"):
             self.assertEqual(
@@ -103,7 +108,7 @@ class InlineQuestsTests(unittest.TestCase):
         self.assertEqual(entries["quest.BB.embedded.title"], "Quest")
         for key in entries:
             if splitter.INLINE_TEXT_KEY.fullmatch(key):
-                entries[key] = "译文：" + entries[key]
+                entries[key] = "\n".join("译文：" + line for line in entries[key].split("\n"))
         (self.output / "en_us_mixed.json").write_text(
             json.dumps(entries, ensure_ascii=False), encoding="utf-8"
         )
@@ -139,6 +144,55 @@ class InlineQuestsTests(unittest.TestCase):
         )
         self.assertIsInstance(result["description"], list)
         self.assertEqual(result["description"], ["One"])
+
+    def test_all_list_fields_join_and_preserve_blank_lines(self):
+        chapter = snbtlib.loads(json.dumps({
+            "id": "AA", "title": "Chapter", "description": [],
+            "images": [{"hover": ["", "hover", ""]}],
+            "quests": [{"id": "BB", "description": ["first", "", "last", ""],
+                        "rewards": [{"id": "CC", "feedback_message": ["done", ""],
+                                     "item": {"components": {
+                                         "minecraft:lore": ["lore", "", "last"]}}}]}],
+        }))
+        (self.chapters / "lists.snbt").write_text(snbtlib.dumps(chapter), encoding="utf-8")
+        entries = self.split()
+        self.assertEqual(entries["quest.BB.embedded.description"], "first\n\nlast\n")
+        self.assertEqual(entries["chapter.AA.image.0.hover"], "\nhover\n")
+        self.assertEqual(entries["reward.CC.feedback_message"], "done\n")
+        self.assertEqual(entries["rewards.CC.lore"], "lore\n\nlast")
+        self.assertEqual(len(entries), 6)
+        self.assertIn('first\\n\\nlast\\n', (self.output / "en_us_lists.json").read_text(encoding="utf-8"))
+        self.merge()
+        self.assertEqual(chapter, snbtlib.loads(
+            (self.translated / "lists.snbt").read_text(encoding="utf-8")
+        ))
+
+    def test_independent_language_lists_and_digit_keys_round_trip(self):
+        self.lang.parent.mkdir()
+        language = snbtlib.loads(json.dumps({
+            "description": ["first", "", "last", ""],
+            "single": ["one"], "empty": [], "literal2": "scalar\nnewline",
+            "literal3": r"literal\ntext",
+        }))
+        self.lang.write_text(snbtlib.dumps(language), encoding="utf-8")
+        entries = self.split()
+        self.assertEqual(entries["description"], "first\n\nlast\n")
+        self.assertEqual(set(entries), set(language))
+        self.merge()
+        self.assertEqual(language, snbtlib.loads(self.zh_lang.read_text(encoding="utf-8")))
+
+    def test_legacy_numbered_inline_entries_still_merge(self):
+        (self.chapters / "legacy.snbt").write_text(
+            '{id:"AA",description:["old"],quests:[]}', encoding="utf-8"
+        )
+        self.output.mkdir()
+        (self.output / "en_us_legacy.json").write_text(json.dumps({
+            "chapter.AA.embedded.description02": "second",
+            "chapter.AA.embedded.description01": "first",
+        }), encoding="utf-8")
+        self.merge()
+        chapter = snbtlib.loads((self.translated / "legacy.snbt").read_text(encoding="utf-8"))
+        self.assertEqual(chapter["description"], ["first", "second"])
 
     def test_upload_and_download_without_language_file(self):
         old_cwd = Path.cwd()
