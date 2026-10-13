@@ -74,6 +74,18 @@
 - **GitHub → Paratranz** 的同步任务使用频率较低，仅支持手动触发。
 - 若项目已完成，请至仓库 **Settings** 中禁用工作流运行。
 
+### FTB Quests 章节内嵌文本
+
+上传同时支持独立的 `Source/config/ftbquests/quests/lang/en_us.snbt` 和直接写在章节 SNBT 中的文本；没有独立语言文件时仍会处理 `chapters/*.snbt`。
+
+- 从章节、任务、子任务和奖励提取 `title`、`subtitle`、`description`，按章节生成 `kubejs/assets/quests/lang/en_us_*.json`。
+- 内嵌字段使用 `quest.<ID>.embedded.title` 等独立键，与 `en_us.snbt` 中的语言键共存。
+- 下载译文时，内嵌键按 ID 回写到 `CNPack/config/ftbquests/quests/chapters/*.snbt`，独立语言键仍合并到 `lang/zh_cn.snbt`。
+- 上传脚本和 `LangSpliter.py split` 默认开启单行列表展平；多行列表保留 `01`、`02` 等后缀。回写内嵌字段时保留源字段的字符串或列表类型。
+- 独立运行时，可用 `python .github/scripts/LangSpliter.py split --no-flatten-single-lines` 关闭展平。
+
+验证：安装 `.github/requirements-ftb.txt` 后运行 `python -m unittest discover -s tests -v`。
+
 ### 任务 JSON 仅在 Paratranz 分片
 
 对于 Minecraft 1.20 及以下常见的 JSON 任务语言文件，可以在 `.github/configs/modpack.json` 中配置虚拟分片。GitHub 的 `Source` 和 `CNPack` 仍各自只保留一个完整语言文件；上传时才按规则生成临时 JSON，下载时再按源文件的键顺序合并。

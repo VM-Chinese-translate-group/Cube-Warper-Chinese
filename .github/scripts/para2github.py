@@ -279,8 +279,9 @@ def main() -> None:
         print(f"已从Paratranz下载到仓库：{log_path}")
 
         # 检查是否为 FTB Quests 的语言文件，并记录其输出目录
-        if "kubejs/assets/quests/lang/" in path_str and os.path.exists(
-            "Source/config/ftbquests/quests/lang/en_us.snbt"
+        if "kubejs/assets/quests/lang/" in path_str and (
+            os.path.exists("Source/config/ftbquests/quests/lang/en_us.snbt")
+            or os.path.isdir("Source/config/ftbquests/quests/chapters")
         ):
             ftb_quests_lang_dir = Path("CNPack") / path.parent
 
@@ -304,7 +305,7 @@ def main() -> None:
 
         # 直接调用从 LangSpliter 导入的函数，并传入所有必需的参数
         if os.path.isdir(source_chapters_dir):
-            print(f"检测到章节目录，将启用 custom_name/lore 更新功能...")
+            print("检测到章节目录，将回写章节、任务及物品内嵌文本...")
             merge_all_to_snbt(
                 json_dir, output_snbt_file, source_chapters_dir, output_chapters_dir
             )

@@ -11,8 +11,8 @@ LangSpliter 命令行工具
      python LangSpliter.py split
    - 指定自定义路径:
      python LangSpliter.py split --source-lang "path/to/en_us.snbt" --output-dir "path/to/output"
-   - **(新功能)** 拆分时将单行列表展平 (不加数字后缀):
-     python LangSpliter.py split --flatten-single-lines
+   - 默认将单行列表展平 (不加数字后缀)，关闭时使用:
+     python LangSpliter.py split --no-flatten-single-lines
 
 2. 合并 JSON 文件为 SNBT 文件:
    - 使用默认路径:
@@ -45,6 +45,62 @@ CATEGORIES_TO_FILES = {
     "en_us_reward_tables.json": ["reward_table."],
 }
 OTHER_ENTRIES_FILE = "en_us_other_entries.json"
+
+INLINE_TEXT_FIELDS = ("title", "subtitle", "description")
+INLINE_TEXT_KEY = re.compile(
+    r"^(chapter|quest|task|reward)\.([0-9A-Fa-f]+)\.embedded\."
+    r"(title|subtitle|description)(\d*)$"
+)
+
+
+def iter_chapter_entities(chapter):
+    """Yield text-bearing objects without traversing item NBT or components."""
+    yield "chapter", chapter
+    for quest in chapter.get("quests", []):
+        yield "quest", quest
+        for task in quest.get("tasks", []):
+            yield "task", task
+        for reward in quest.get("rewards", []):
+            yield "reward", reward
+
+
+def extract_inline_text(chapter, output, flatten_single_lines=False):
+    # Separate embedded keys from independent language keys in mixed-format packs.
+    for scope, entity in iter_chapter_entities(chapter):
+        entity_id = entity.get("id")
+        if not entity_id:
+            continue
+        for field in INLINE_TEXT_FIELDS:
+            value = entity.get(field)
+            key = f"{scope}.{entity_id}.embedded.{field}"
+            if isinstance(value, str):
+                output[key] = str(value)
+            elif isinstance(value, list):
+                if flatten_single_lines and len(value) == 1:
+                    output[key] = str(value[0])
+                else:
+                    for index, line in enumerate(value, 1):
+                        output[f"{key}{index:02d}"] = str(line)
+
+
+def apply_inline_text(chapter, translations):
+    """Restore translated text with the source field's scalar/list shape."""
+    changed = False
+    for scope, entity in iter_chapter_entities(chapter):
+        entity_id = entity.get("id")
+        for field in INLINE_TEXT_FIELDS:
+            lines = translations.get((scope, str(entity_id), field))
+            if not lines or field not in entity:
+                continue
+            values = [text for _, text in sorted(lines)]
+            if isinstance(entity[field], list):
+                entity[field] = List([String(text) for text in values])
+            elif isinstance(entity[field], str):
+                entity[field] = String(values[0])
+            else:
+                continue
+            changed = True
+    return changed
 
 # --- 排序逻辑配置 ---
 SORT_ORDER_CONFIG = {
@@ -85,8 +141,12 @@ def split_and_process_all(
 
     # 1. 加载源语言文件
     try:
-        with open(source_lang_file, "r", encoding="utf-8") as f:
-            snbt_data = snbtlib.loads(f.read())
+        if os.path.isfile(source_lang_file):
+            with open(source_lang_file, "r", encoding="utf-8") as f:
+                snbt_data = snbtlib.loads(f.read())
+        else:
+            snbt_data = {}
+            print("未检测到独立语言文件，将从章节 SNBT 提取内嵌文本。")
 
         lang_data = OrderedDict()
         for key, value in snbt_data.items():
@@ -113,8 +173,7 @@ def split_and_process_all(
             f"成功加载并处理了 {len(snbt_data)} 个原始SNBT条目，生成了 {len(lang_data)} 条扁平化语言条目。"
         )
     except Exception as e:
-        print(f"错误: 加载或解析 {source_lang_file} 失败: {e}")
-        return
+        raise RuntimeError(f"加载或解析 {source_lang_file} 失败") from e
 
     # 2. 预分类所有语言条目
     categorized_data = {filename: OrderedDict() for filename in CATEGORIES_TO_FILES}
@@ -173,6 +232,7 @@ def split_and_process_all(
         tasks_data,
         rewards_data,
         output_dir,
+        flatten_single_lines,
     )
 
     print("--- 拆分和处理完成 ---\n")
@@ -351,7 +411,8 @@ def process_item_list_for_components(item_list, list_key_name, output_dict):
 
 
 def process_chapter_quests(
-    chapters_dir, chapters_lang_data, quests_data, tasks_data, rewards_data, output_dir
+    chapters_dir, chapters_lang_data, quests_data, tasks_data, rewards_data, output_dir,
+    flatten_single_lines=False,
 ):
     """
     根据章节文件，将章节、任务、子任务、奖励的相关语言条目导出到对应的JSON文件。
@@ -399,6 +460,9 @@ def process_chapter_quests(
                 continue
 
             chapter_output_content = OrderedDict()
+            extract_inline_text(
+                chapter_data, chapter_output_content, flatten_single_lines
+            )
 
             # 收集与本章节ID匹配的 chapter.* 语言条目
             chapter_prefix = f"chapter.{chapter_id}"
@@ -493,7 +557,7 @@ def process_chapter_quests(
             )
 
         except Exception as e:
-            print(f"  -> 处理文件 {filename} 时发生错误: {e}")
+            raise RuntimeError(f"处理章节文件 {filename} 失败") from e
 
 
 def update_chapter_files_with_components(
@@ -518,6 +582,7 @@ def update_chapter_files_with_components(
     mods_by_id = {}
     feedback_mods_by_id = {}
     hover_mods_by_chapter_id = {}
+    inline_translations = {}
 
     # 无需修改，(\d+) 和 (\d*) 可以正确匹配 01, 02 等
     lore_pattern = re.compile(r"^(?:tasks|rewards)\.([0-9A-F]+)\.lore(\d+)$")
@@ -526,6 +591,13 @@ def update_chapter_files_with_components(
     hover_pattern = re.compile(r"^chapter\.([0-9A-F]+)\.image\.(\d+)\.hover(\d*)$")
 
     for key, value in component_data.items():
+        inline_match = INLINE_TEXT_KEY.fullmatch(key)
+        if inline_match:
+            scope, entity_id, field, index = inline_match.groups()
+            inline_translations.setdefault((scope, entity_id, field), []).append(
+                (int(index) if index else 0, value)
+            )
+            continue
         # custom_name/lore
         name_match = name_pattern.match(key)
         if name_match:
@@ -585,7 +657,7 @@ def update_chapter_files_with_components(
             with open(input_file_path, "r", encoding="utf-8") as f:
                 snbt_data = snbtlib.loads(f.read())
 
-            file_was_modified = [False]
+            file_was_modified = [apply_inline_text(snbt_data, inline_translations)]
             chapter_id = snbt_data.get("id")
 
             # 更新 hover
@@ -681,10 +753,7 @@ def update_chapter_files_with_components(
                 print(f"  -> 已将更新后的 {filename} 写入到: {output_file_path}")
                 modified_files_count += 1
         except Exception as e:
-            import traceback
-
-            print(f"  -> 更新文件 {filename} 时出错: {e}")
-            traceback.print_exc()
+            raise RuntimeError(f"回写章节文件 {filename} 失败") from e
 
     print(f"更新完成。共修改了 {modified_files_count} 个文件。")
     all_updated_ids = updated_ids.union(set(feedback_mods_by_id.keys()))
@@ -736,7 +805,9 @@ def merge_all_to_snbt(
         r"reward\.[0-9A-F]+\.feedback_message\d*$"
     )
     for key, value in combined_data.items():
-        if chapters_dir and embedded_key_pattern.match(key):
+        if chapters_dir and (
+            embedded_key_pattern.match(key) or INLINE_TEXT_KEY.fullmatch(key)
+        ):
             embedded_data[key] = value
         else:
             standard_data[key] = value
@@ -867,8 +938,9 @@ if __name__ == "__main__":
         )
         parser_split.add_argument(
             "--flatten-single-lines",
-            action="store_true",
-            help="当 SNBT 列表只有一个元素时，将其展平为不带数字后缀的键值对。",
+            action=argparse.BooleanOptionalAction,
+            default=True,
+            help="默认将单行列表展平；使用 --no-flatten-single-lines 可关闭。",
         )
 
         # --- 合并任务的参数 (标准逻辑) ---
