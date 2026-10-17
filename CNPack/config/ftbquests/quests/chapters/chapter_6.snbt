@@ -33,7 +33,7 @@
 				title: "Enter: &lThe Edge of Reality"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension &k999&r: &lThe Edge of Reality"
+			title: "欢迎来到&k999&r号维度: &lThe Edge of Reality"
 			x: -5.0d
 			y: 5.5d
 		}
@@ -102,7 +102,7 @@
 				{
 					dimension: "hexahedron:overworld"
 					id: "5B072252D95428A0"
-					title: "Enter the final destination: &lThe Overworld"
+					title: "进入最后的目的地: &l主世界"
 					type: "dimension"
 				}
 			]
@@ -216,7 +216,7 @@
 					type: "item"
 				}
 			]
-			title: "The Final Process"
+			title: "最后的历程"
 			x: -5.0d
 			y: 19.0d
 		}
@@ -247,10 +247,10 @@
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "6C52C4A4BFFE9BF0"
-			subtitle: "&oVenture out into the Unknown"
+			subtitle: "&o冒险进入未知"
 			tasks: [{
 				id: "78A678777FF97159"
-				title: "I must Investigate this Further"
+				title: "我必须进一步调查"
 				type: "checkmark"
 			}]
 			title: "The Edge of Reality"
@@ -258,5 +258,5 @@
 			y: 8.0d
 		}
 	]
-	title: "Chapter 7"
+	title: "第七章"
 }

@@ -361,7 +361,7 @@
 			tasks: [{
 				dimension: "hexahedron:alpha_islands"
 				id: "7A36E4B346C12ABE"
-				title: "Enter dimension 128: &lAlpha-201"
+				title: "进入128号维度: &lAlpha-201"
 				type: "dimension"
 			}]
 			title: "Welcome to dimension 128: &lAlpha-201"
@@ -622,7 +622,7 @@
 			}]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "&oWho?"
+			subtitle: "&o谁?"
 			tasks: [
 				{
 					id: "1447BCC5A1A47C31"
@@ -1153,5 +1153,5 @@
 			y: 20.0d
 		}
 	]
-	title: "Chapter 6"
+	title: "第6章"
 }

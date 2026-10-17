@@ -17,10 +17,10 @@
 			tasks: [{
 				dimension: "hexahedron:dark_rocks"
 				id: "1D4E6E0C36C15444"
-				title: "Enter to dimension 4: &lThe Redvein Expanse"
+				title: "进入4号维度: &lThe Redvein Expanse"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 4: &lThe Redvein Expanse"
+			title: "欢迎来到4号维度: &lThe Redvein Expanse"
 			x: -7.5d
 			y: -7.5d
 		}
@@ -32,10 +32,10 @@
 			tasks: [{
 				dimension: "hexahedron:magnetic_ceiling"
 				id: "042F7A886B94AD3D"
-				title: "Enter dimension 6: &lFerrum-6"
+				title: "进入六号纬度: &lFerrum-6"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 6: &lFerrum-6"
+			title: "欢迎来到6号维度: &lFerrum-6"
 			x: 8.0d
 			y: -7.5d
 		}
@@ -63,7 +63,7 @@
 				type: "item"
 			}]
 			size: 2.0d
-			subtitle: "&oThe Beginning of Everything"
+			subtitle: "&o万物起源"
 			tasks: [{
 				id: "630A583F00303E69"
 				item: "ae2:fluix_crystal"
@@ -399,7 +399,7 @@
 					type: "item"
 				}
 			]
-			title: "Digital Storage"
+			title: "数字存储"
 			x: -1.5d
 			y: 27.5d
 		}
@@ -950,5 +950,5 @@
 			y: 25.5d
 		}
 	]
-	title: "Chapter 2"
+	title: "第2章"
 }

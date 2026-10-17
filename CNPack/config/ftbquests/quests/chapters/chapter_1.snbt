@@ -33,10 +33,10 @@
 			tasks: [{
 				dimension: "hexahedron:dry_ocean"
 				id: "330B64BD6367720B"
-				title: "Enter dimension 1: &lStranded-233"
+				title: "进入1号维度: &lStranded-233"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 1: &lStranded-233"
+			title: "欢迎来到1号维度: &lStranded-233"
 			x: 0.0d
 			y: 5.5d
 		}
@@ -48,10 +48,10 @@
 			tasks: [{
 				dimension: "hexahedron:copper_remains"
 				id: "2A94A3461D1CF3D5"
-				title: "Enter dimension 3: &lCopper Graveyard"
+				title: "进入3号维度: &lCopper Graveyard"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 3: &lCopper Graveyard"
+			title: "欢迎来到3号维度: &lCopper Graveyard"
 			x: -5.5d
 			y: 5.5d
 		}
@@ -63,10 +63,10 @@
 			tasks: [{
 				dimension: "hexahedron:stacked_rocks"
 				id: "05CC9EA5DC9AF5B9"
-				title: "Enter dimension 2: &lThe Fenspire Deep"
+				title: "进入2号纬度: &lThe Fenspire Deep"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 2: &lThe Fenspire Deep"
+			title: "欢迎来到2号维度: &lThe Fenspire Deep"
 			x: 5.5d
 			y: 5.5d
 		}
@@ -76,9 +76,9 @@
 				"03F601F6C4B86B5C"
 			]
 			description: [
-				"Digging up the huge columns of cobblestone can provide you with the stone to make some basic tools and a furnace."
+				"挖掘巨大的圆石柱可以为你提供制作基础工具和熔炉所需的石头。"
 				""
-				"Remember that there is Veinminer in this pack, which allows you to collect a lot of cobble quickly."
+				"请记住，整合包中包含了连锁挖矿，可以让你快速收集大量圆石。"
 			]
 			icon: "minecraft:cobblestone"
 			id: "6C140B16BB0A73A8"
@@ -118,7 +118,7 @@
 		}
 		{
 			dependencies: ["72A11E4DE0439CFD"]
-			description: ["Using your generated power you can now charge up Empty Vector Operators to create Charged Vector Operators."]
+			description: ["利用你产生的能量，你可以向Empty Vector Operators充能，从而合成Charged Vector Operators."]
 			id: "660475C0C9A71E8E"
 			rewards: [{
 				id: "41FF5D4FBF83E979"
@@ -142,9 +142,9 @@
 				"6C140B16BB0A73A8"
 			]
 			description: [
-				"Cut Copper can be smelted into Copper Ingots."
+				"切制铜块可以熔炼成铜锭。"
 				""
-				"You will need to scrape the oxidation off first before smelting it."
+				"在此之前，你需要先刮掉其表面的氧化层。"
 			]
 			icon: "minecraft:copper_ingot"
 			id: "331319E9F6BD173A"
@@ -176,11 +176,11 @@
 				"6C140B16BB0A73A8"
 			]
 			description: [
-				"The Peat Fired Engine will allow you to generate your first bit of power."
+				"泥炭引擎将使你生产出你的第一度电。"
 				""
-				"Simply provide it with peat and a redstone signal."
+				"只需为其提供泥炭和红石信号即可。"
 				""
-				"Do note that this generator can only burn peat and nothing else."
+				"请注意，该发电机只能燃烧泥炭，无法使用其他燃料。"
 			]
 			icon: "forestry:engine_peat"
 			id: "72A11E4DE0439CFD"
@@ -207,7 +207,7 @@
 		}
 		{
 			dependencies: ["03F601F6C4B86B5C"]
-			description: ["Peat is a powerful natural fuel source that allows you to conserve wood since you can now burn this stuff instead."]
+			description: ["泥炭是一种高效的天然燃料来源，你现在可以使用它来节约你的木材。"]
 			id: "5F45EF4EDED9B5EA"
 			rewards: [{
 				id: "58BE8FBA1914D053"
@@ -226,11 +226,11 @@
 		{
 			dependencies: ["03F601F6C4B86B5C"]
 			description: [
-				"Droopfruit in its raw state isn't the greatest food source. But it can keep you alive."
+				"生食垂挂果并非最佳的食物来源，但它能维持你的生命。"
 				""
-				"Consider making Droop Soup in order to improve its nutritional value."
+				"考虑制作垂挂果汤以提升其营养价值。"
 				""
-				"New berries can only appear when the plant grows downwards."
+				"新的浆果只会在植株向下生长时出现。"
 			]
 			id: "4BDF72AE9BF4F899"
 			rewards: [{
@@ -338,7 +338,7 @@
 				item: "exposure:camera_stand"
 				type: "item"
 			}]
-			title: "Dimensional Tourist"
+			title: "纬度旅行者"
 			x: -1.5d
 			y: 10.0d
 		}
@@ -369,5 +369,5 @@
 			y: 14.0d
 		}
 	]
-	title: "Chapter 1"
+	title: "第1章"
 }

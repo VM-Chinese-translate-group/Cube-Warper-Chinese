@@ -33,11 +33,10 @@
 		{
 			dependencies: ["30A0ACC1C6D738A8"]
 			description: [
-				"In this strange new dimension you can find Old Vector Operators."
-				"Placing them onto the three plugs inside the Hexahedron will allow you to travel to new dimensions."
+				"在这个奇怪的新维度中，你可以找到Old Vector Operators 。"
+				"将它们放置在立方体内的三个插槽中，便能将你送往新的维度。"
 				""
-				"Each of the Old Vector Operators "
-				"adds +1. So for example, two in a row will send you to dimension 2."
+				"每个Old Vector Operators 都会增加+1的数值。例如，放置两个便会将你传送至维度2。"
 				""
 				"{image:kubejs:textures/questbook/book_images/vectors.png width:154 height:122 align:center}"
 			]
@@ -61,11 +60,11 @@
 		{
 			dependencies: ["30A0ACC1C6D738A8"]
 			description: [
-				"While holding the default &otilde&r key (~) you can mine a lot of adjacent blocks at once as long as they are of the same type. "
+				"按住默认的&o波浪号&r键 (~)你可以一次性挖掘大量相邻的方块，前提是这些方块属于同一类型。"
 				""
-				"This is quite a handy tool that prevents tasks from becoming to grindy."
+				"这是一个非常方便的功能，能有效避免重复操作。"
 				""
-				"You can rebind this key in the controls menu under \"FTB Ultimine\"."
+				"你可以在控制设置菜单中的 “FTB Ultimine” 选项下重新绑定该按键。"
 			]
 			icon: {
 				Count: 1
@@ -88,11 +87,11 @@
 		{
 			dependencies: ["30A0ACC1C6D738A8"]
 			description: [
-				"Using the FTB map you can force load chunks so that setups work even when you are not currently present in that specific area."
+				"你可以使用 FTB 地图模组强制加载区块，从而确保即使你不在该区域时，各种自动化装置也能正常运行。"
 				""
-				"Simply click the second map icon in the top left of your inventory screen. There you will be able to claim chunks."
+				"只需点击物品栏屏幕左上角的第二个地图图标。你可以在这里认领区块。"
 				""
-				"You can shift right-click on loaded chunks on the map to force load them."
+				"在地图上对已认领的区块按住 Shift 键并右击，即可将其设置为强制加载。"
 			]
 			icon: {
 				Count: 1
@@ -115,11 +114,11 @@
 		{
 			dependencies: ["30A0ACC1C6D738A8"]
 			description: [
-				"The Akashic Tome contains all the guidebooks you will ever need."
+				"阿卡什宝典包含了你所需要的所有指南书。"
 				""
-				"If you are ever unsure on how to do something, make sure to check the guidebook of the corresponding mod."
+				"如果你不确定某项操作该如何进行，请务必查看对应模组的指南书。"
 				""
-				"Once you have morphed The Tome into one of the guidebooks you can Left-click it to transform it back into the Akashic Tome."
+				"当你将宝典变形为其中一本指南书后，只需左键点击它，即可将其变回阿卡什宝典。"
 			]
 			icon: "akashictome:tome"
 			id: "11650877F274EF55"
@@ -232,9 +231,9 @@
 		{
 			dependencies: ["30A0ACC1C6D738A8"]
 			description: [
-				"Because of the nature of this modpack, it is best to not push your render distance beyond 12 chunks."
+				"由于该整合包的特性，建议不要将渲染距离设置为超过 12 个区块。"
 				""
-				"This goes mainly for when the Hexahedron is changing its location to a fully new dimension."
+				"这一点在立方体迁移至一个全新的维度时尤为重要。"
 			]
 			icon: "supplementaries:slice_map"
 			id: "31BF68FFC2949A89"
@@ -269,5 +268,5 @@
 			y: 1.5d
 		}
 	]
-	title: "Chapter 0"
+	title: "第0章"
 }
