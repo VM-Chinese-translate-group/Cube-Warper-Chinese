@@ -446,7 +446,7 @@
 				}
 			]
 			shape: "gear"
-			subtitle: "&oPowered by a Magma Ocean"
+			subtitle: "&o由岩浆海所驱动"
 			tasks: [{
 				id: "5659E7CF585539EA"
 				item: "thermal:dynamo_magmatic"
@@ -728,7 +728,7 @@
 			}]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "&oPower is Power!"
+			subtitle: "&o能量就是力量！"
 			tasks: [{
 				id: "757E2561F7D4DC2C"
 				item: "kubejs:energized_redstone"
@@ -756,7 +756,7 @@
 				item: "regions_unexplored:raw_redstone_block"
 				type: "item"
 			}]
-			title: "Redstone Generator"
+			title: "红石生成器"
 			x: -6.5d
 			y: -3.0d
 		}
@@ -774,7 +774,7 @@
 				item: "tconstruct:seared_cobble"
 				type: "item"
 			}]
-			title: "Seared Cobblestone Generator"
+			title: "焦黑圆石生成器"
 			x: 2.0d
 			y: -5.0d
 		}
@@ -823,7 +823,7 @@
 		}
 		{
 			dependencies: ["57972A3714FCB9BE"]
-			description: ["You can import and export any item or fluid using an import or export bus."]
+			description: ["你可以使用输入总线或输出总线来导入和导出任何物品或流体。"]
 			id: "7AFCECBEEE6C2FBB"
 			rewards: [{
 				id: "6E2F7CF013466418"
@@ -863,7 +863,7 @@
 		}
 		{
 			dependencies: ["27F373FB15FA7C80"]
-			description: ["The Smelter can create the Seared Alloy that is needed for Create. Later on this task can be taken over by the Mechanical Mixer."]
+			description: ["冶炼炉可以制作机械动力模组所需的安山合金。后续这项任务可以由动力搅拌器接手。"]
 			id: "5A3062A00E9E98F9"
 			rewards: [{
 				id: "7DA4C2C8289E2767"

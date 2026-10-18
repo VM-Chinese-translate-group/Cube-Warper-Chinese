@@ -234,10 +234,10 @@
 			tasks: [{
 				dimension: "hexahedron:the_sugarscape"
 				id: "59E1D4EF1603E70F"
-				title: "Enter dimension 24: &lThe Sugarscape"
+				title: "进入24号维度: &l糖果世界"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 24: &lThe Sugarscape"
+			title: "欢迎来到24号维度: &l糖果世界"
 			x: 4.0d
 			y: 7.5d
 		}
@@ -277,7 +277,7 @@
 					type: "item"
 				}
 			]
-			title: "Energized Glowstone"
+			title: "充能荧石"
 			x: 4.0d
 			y: 29.0d
 		}
@@ -390,10 +390,10 @@
 			tasks: [{
 				dimension: "hexahedron:the_azurewood"
 				id: "5F6951ED75A4A1E5"
-				title: "Enter dimension 32: &lThe Azurewood"
+				title: "进入32号维度: &l蔚蓝之林"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 32: &lThe Azurewood"
+			title: "欢迎来到32号维度: &l蔚蓝之林"
 			x: 14.0d
 			y: 7.5d
 		}
@@ -424,7 +424,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oTree Juice"
+			subtitle: "&o树汁"
 			tasks: [
 				{
 					id: "20718A62F0A2B2B5"
@@ -442,7 +442,7 @@
 					type: "item"
 				}
 			]
-			title: "Runic Sap"
+			title: "符文树液"
 			x: 11.5d
 			y: 10.5d
 		}
@@ -574,7 +574,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "&oMight and Magic"
+			subtitle: "&o力量与魔法"
 			tasks: [
 				{
 					id: "4A454ED07D7036C1"
@@ -671,7 +671,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "&oRings of Power"
+			subtitle: "&o力量之戒"
 			tasks: [
 				{
 					id: "3E78273575929EE4"
@@ -705,7 +705,7 @@
 					type: "item"
 				}
 			]
-			title: "Collecting all the Rings"
+			title: "收集所有戒指"
 			x: 8.0d
 			y: 10.5d
 		}
@@ -1111,7 +1111,7 @@
 					type: "item"
 				}
 			]
-			title: "Sacrificing Blazes"
+			title: "献祭烈焰人"
 			x: -4.0d
 			y: 25.0d
 		}
@@ -1180,10 +1180,10 @@
 			tasks: [{
 				dimension: "hexahedron:blood_ocean"
 				id: "212DA0E6DAE6F629"
-				title: "Enter dimension 16: &lBlood Ocean"
+				title: "进入16号维度: &l血海"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 16: &lBlood Ocean"
+			title: "欢迎来到16号维度: &l血海"
 			x: -4.0d
 			y: 7.5d
 		}
