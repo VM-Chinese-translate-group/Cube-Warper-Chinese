@@ -120,7 +120,7 @@
 			}]
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "&oI See You"
+			subtitle: "&o我看见你了"
 			tasks: [
 				{
 					count: 2L
@@ -344,7 +344,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oI'm sorry Dave, I'm Afraid I can't do that"
+			subtitle: "&o抱歉戴夫，恐怕我做不到"
 			tasks: [{
 				id: "268131570DAFD474"
 				item: "kubejs:seeking_circuit"
@@ -364,7 +364,7 @@
 				title: "进入128号维度: &lAlpha-201"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 128: &lAlpha-201"
+			title: "欢迎来到128号维度: &lAlpha-201"
 			x: 20.0d
 			y: 9.0d
 		}
@@ -552,7 +552,7 @@
 					type: "item"
 				}
 			]
-			title: "Default Cube"
+			title: "默认方块"
 			x: 20.0d
 			y: 18.0d
 		}
@@ -570,7 +570,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oWhat?"
+			subtitle: "&o什么？"
 			tasks: [
 				{
 					id: "3D6AC56D3EEF1397"
@@ -759,7 +759,7 @@
 				}
 				{
 					id: "22CC59931842C17F"
-					title: "I am a Alchemist now"
+					title: "我现在是一名炼金术士了"
 					type: "checkmark"
 				}
 			]
@@ -881,13 +881,13 @@
 				item: "kubejs:party_popper"
 				type: "item"
 			}]
-			subtitle: "&oIs Anyone There?"
+			subtitle: "&o有人在吗？"
 			tasks: [{
 				id: "35A43F2DEF132338"
 				item: "kubejs:supercomputer"
 				type: "item"
 			}]
-			title: "Supercomputer"
+			title: "超算"
 			x: 0.0d
 			y: 35.0d
 		}

@@ -17,7 +17,7 @@
 			tasks: [{
 				dimension: "hexahedron:dark_rocks"
 				id: "1D4E6E0C36C15444"
-				title: "进入4号维度: &lThe Redvein Expanse"
+				title: "进入4号维度: &l红脉群岛"
 				type: "dimension"
 			}]
 			title: "欢迎来到4号维度: &lThe Redvein Expanse"
@@ -32,10 +32,10 @@
 			tasks: [{
 				dimension: "hexahedron:magnetic_ceiling"
 				id: "042F7A886B94AD3D"
-				title: "进入六号纬度: &lFerrum-6"
+				title: "进入六号纬度: &l铁穹-6"
 				type: "dimension"
 			}]
-			title: "欢迎来到6号维度: &lFerrum-6"
+			title: "欢迎来到6号维度: &l铁穹-6"
 			x: 8.0d
 			y: -7.5d
 		}
@@ -47,10 +47,10 @@
 			tasks: [{
 				dimension: "hexahedron:magma_plateau"
 				id: "309419B5A56E0419"
-				title: "Enter to dimension 9: &lThe Horizon of Cinders"
+				title: "进入9号维度: &l余烬地平线"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 9: &lThe Horizon of Cinders"
+			title: "欢迎来到9号维度: &l余烬地平线"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -106,7 +106,7 @@
 			]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "&oWhat Happened to the Fridge?!"
+			subtitle: "&o冰箱怎么了？！"
 			tasks: [
 				{
 					id: "738B2F57E04A92DF"
@@ -154,7 +154,7 @@
 		}
 		{
 			dependencies: ["7B40E840FEA205E1"]
-			description: ["The Pulverizer can turn various materials into their dust form."]
+			description: ["磨粉机可以将各种材料粉碎成粉末。"]
 			id: "37942CC359146473"
 			rewards: [{
 				id: "0089CFB77DA5C961"
@@ -162,7 +162,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "&oBecome Dust!"
+			subtitle: "&o化为尘埃！"
 			tasks: [{
 				id: "3CB23C61473A981A"
 				item: "thermal:machine_pulverizer"
@@ -209,13 +209,13 @@
 					type: "item"
 				}
 			]
-			title: "Machine Frame"
+			title: "机器框架"
 			x: 0.0d
 			y: 9.5d
 		}
 		{
 			dependencies: ["29192445C9E655E1"]
-			description: ["The Crystallizer can form various crystals as long as it has a good supply of water."]
+			description: ["只要供水充足，结晶器就能形成各种晶体。"]
 			id: "5062CBABFE108855"
 			rewards: [{
 				id: "0F2B664B2C7E3D11"
@@ -234,7 +234,7 @@
 		}
 		{
 			dependencies: ["7B40E840FEA205E1"]
-			description: ["The Multiservo Press can reshape your metals using pretty much any mold."]
+			description: ["多驱冲压机可以使用绝大多数模具来重塑你的金属。"]
 			id: "225FF21D6FE56470"
 			rewards: [{
 				id: "6601A72D5EEE0970"
@@ -279,15 +279,15 @@
 					type: "item"
 				}
 			]
-			title: "Universal Cable"
+			title: "通用线缆"
 			x: -5.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["21858D3EA2248A30"]
 			description: [
-				"Mysterious cubes can be found in The Redvein Expanse."
-				"upon breaking them they will drop all five diffrent presses."
+				"在红脉群岛可以找到神秘方块。"
+				"打破它们会掉落全部五种压印模板。"
 			]
 			id: "4EF6E1518A06155D"
 			rewards: [{
@@ -328,7 +328,7 @@
 					type: "item"
 				}
 			]
-			title: "Alien Tech"
+			title: "外星科技"
 			x: -7.5d
 			y: 12.5d
 		}
@@ -350,7 +350,7 @@
 				item: "ae2:calculation_processor"
 				type: "item"
 			}]
-			title: "Inscribing"
+			title: "压印"
 			x: 0.0d
 			y: 18.0d
 		}
@@ -372,7 +372,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oYour items on a Disk"
+			subtitle: "&你的物品在磁盘上"
 			tasks: [
 				{
 					id: "727FACB18A22A652"
@@ -405,7 +405,7 @@
 		}
 		{
 			dependencies: ["6895C817C27DBF50"]
-			description: ["There are Certus Quartz Crystals growing on the Ceiling of Ferrum-6."]
+			description: ["在铁穹-6的天花板上生长着赛特斯石英水晶。"]
 			id: "1C48F58D90ECDFA4"
 			rewards: [{
 				count: 10
@@ -413,7 +413,7 @@
 				item: "ae2:certus_quartz_crystal"
 				type: "item"
 			}]
-			subtitle: "&oWhy is it Blue?"
+			subtitle: "&o为什么他是蓝的？"
 			tasks: [{
 				id: "691F4F7F23B8C6C8"
 				item: "ae2:certus_quartz_crystal"
@@ -481,7 +481,7 @@
 				type: "item"
 			}]
 			shape: "octagon"
-			subtitle: "&oMagnetic Rock"
+			subtitle: "&o磁石"
 			tasks: [
 				{
 					count: 10L
@@ -495,7 +495,7 @@
 					type: "item"
 				}
 			]
-			title: "Silicon"
+			title: "硅"
 			x: 0.0d
 			y: 15.0d
 		}
@@ -605,14 +605,14 @@
 		}
 		{
 			dependencies: ["294927CF94DF28A9"]
-			description: ["Gilded Blackstone can be mined for its gold."]
+			description: ["镀金黑石可以开采出其中的黄金。"]
 			id: "025727EB1207A20C"
 			rewards: [{
 				id: "7CF7C939A6B01336"
 				item: "kubejs:tiny_party_popper"
 				type: "item"
 			}]
-			subtitle: "&oThey Call it a Mine"
+			subtitle: "&o他们把它叫做矿井"
 			tasks: [{
 				id: "0C4138E3529C1698"
 				item: "minecraft:gold_ingot"
@@ -623,7 +623,7 @@
 		}
 		{
 			dependencies: ["6C931B0EC40E1417"]
-			description: ["Using the Mechanical Press you can now recreate Hydraullic Press videos by crushing things very slowly."]
+			description: ["使用动力冲压机，你现在可以重现液压机缓慢压碎物品的视频了。"]
 			id: "141D5FA7C09C176A"
 			rewards: [{
 				id: "295FA51297A011C6"
@@ -631,7 +631,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "&oHydaullic Press"
+			subtitle: "&o液压机"
 			tasks: [{
 				id: "13B6BA6736F1A4D9"
 				item: "create:mechanical_press"
@@ -643,9 +643,9 @@
 		{
 			dependencies: ["21858D3EA2248A30"]
 			description: [
-				"You can soon pulverize Skystone into Skystone Dust."
+				"你很快就能将陨石粉碎成陨石粉。"
 				""
-				"It might be a good idea to stock up on this to prevent having to come back to this dimension constantly."
+				"最好多囤积一些，这样就不用频繁回到这个维度了。"
 			]
 			icon: "ae2:sky_dust"
 			id: "498E60F53CA8DC47"
@@ -654,7 +654,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oNot From Outer Space"
+			subtitle: "&o并非来自太空"
 			tasks: [
 				{
 					id: "68373716FB70D6B0"
@@ -672,7 +672,7 @@
 		}
 		{
 			dependencies: ["225FF21D6FE56470"]
-			description: ["You can turn an Iron plate into almost any press using the Stonecutter."]
+			description: ["你可以使用切石机将铁板加工成几乎所有模具。"]
 			icon: "thermal:press_gear_die"
 			id: "52BADFDDBC19F479"
 			rewards: [{
@@ -681,7 +681,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "&oIn My Talons, I Shape Clay"
+			subtitle: "&o如同黏土般塑形"
 			tasks: [
 				{
 					id: "12AAEFD231CB3DEC"
@@ -694,7 +694,7 @@
 					type: "item"
 				}
 			]
-			title: "Getting the Presses"
+			title: "获取压制模板"
 			x: 4.0d
 			y: 15.0d
 		}
@@ -704,15 +704,15 @@
 				"6425F9E49FF8149B"
 			]
 			description: [
-				"You can turn Redstone into Energized Redstone using the first shrine located in the Redvein Expanse."
+				"你可以使用红脉群岛的神龛将红石转化为充能红石。"
 				""
-				"Right-clicking Redstone onto the Ancient Redstone Core will convert it into Energized Redstone."
+				"手持红石右键点击远古红石核心，即可将其转化为充能红石。"
 				""
-				"This will have a slight cooldown. Do note however that any automated systems like deployers do not suffer from this cooldown."
+				"此操作会有短暂的冷却。请注意，像机械手这样的自动化装置不受此冷却限制。"
 				""
 				"{image:kubejs:textures/questbook/book_images/first_shrine.png width:192 height:108 align:center}"
 				""
-				"It might be a good idea to setup a local passive steam engine to avoid having to come back to this dimension constantly."
+				"在此地建设一个被动式蒸汽机可能是个好主意，避免不断往返于这个维度。"
 			]
 			id: "5A3080407E21CCC2"
 			rewards: [{
@@ -740,9 +740,9 @@
 		{
 			dependencies: ["21858D3EA2248A30"]
 			description: [
-				"Any stone generator located in The Redvein Expanse will generate Raw Redstone instead of Cobblestone."
+				"位于红脉群岛的任何刷石机都会生成粗红石块而不是圆石。"
 				""
-				"This can soon be pulverized into renewable redstone."
+				"这些粗红石块很快就能被粉碎成可再生的红石。"
 			]
 			id: "48D52434D4D010CD"
 			rewards: [{
@@ -763,9 +763,9 @@
 		{
 			dependencies: ["294927CF94DF28A9"]
 			description: [
-				"&lThe stone generated from stone generators is diffrent in every dimension.&r"
+				"&l每个维度中由刷石机生成的石头都不相同。&r"
 				""
-				"In the Horizon of Cinders seared cobblestone will be generated."
+				"在余烬地平线中，会生成焦黑圆石。"
 			]
 			id: "454DD9A7F78B055C"
 			shape: "octagon"
@@ -795,16 +795,16 @@
 					type: "item"
 				}
 			]
-			title: "Utility Machines"
+			title: "实用机械"
 			x: -4.0d
 			y: 12.5d
 		}
 		{
 			dependencies: ["141D5FA7C09C176A"]
-			description: ["Pressing any log will yield Rubber. You can create Cured Rubber by smelting it"]
+			description: ["冲压任意原木可获得橡胶，将橡胶烧制即可获得硫化橡胶"]
 			icon: "thermal:cured_rubber"
 			id: "19691D3E91B00F71"
-			subtitle: "&oNot Glue"
+			subtitle: "&o不是胶水"
 			tasks: [
 				{
 					id: "503F3EF203450B93"
@@ -817,7 +817,7 @@
 					type: "item"
 				}
 			]
-			title: "Making Rubber"
+			title: "制作橡胶"
 			x: 2.0d
 			y: 0.5d
 		}
@@ -830,7 +830,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oThe Basics of Automation"
+			subtitle: "&o自动化基础"
 			tasks: [
 				{
 					id: "5FC39893D01C8DEC"
@@ -848,16 +848,16 @@
 		}
 		{
 			dependencies: ["141D5FA7C09C176A"]
-			description: ["A lot of tasks can be automated with deployers. It might be a good idea to set these up in the right locations quite early."]
+			description: ["许多任务可以通过机械手实现自动化。尽早将它们放置在正确的位置可能是个好主意。"]
 			id: "6FB4B571A199E199"
 			shape: "gear"
-			subtitle: "&oWhat is my Purpose?"
+			subtitle: "&o我的目的是什么？"
 			tasks: [{
 				id: "557AE64BD170D6EA"
 				item: "create:deployer"
 				type: "item"
 			}]
-			title: "Busy Hands"
+			title: "飞转的手"
 			x: -2.0d
 			y: 0.5d
 		}
@@ -894,7 +894,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oMaking Machines that Make more Machines"
+			subtitle: "&o制造能够制造更多机器的机器"
 			tasks: [
 				{
 					id: "069E9048DC16F38B"
@@ -928,13 +928,13 @@
 					type: "item"
 				}
 			]
-			title: "Auto Crafting"
+			title: "自动合成"
 			x: 3.0d
 			y: 25.5d
 		}
 		{
 			dependencies: ["57972A3714FCB9BE"]
-			description: ["With the Molecular Assembler you can automate any crafting recipe."]
+			description: ["使用分子装配室，你可以自动化任何合成配方。"]
 			id: "57F2E56BF5B24561"
 			rewards: [{
 				id: "6F5553FBDB50903D"

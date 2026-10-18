@@ -33,10 +33,10 @@
 			tasks: [{
 				dimension: "hexahedron:dry_ocean"
 				id: "330B64BD6367720B"
-				title: "进入1号维度: &lStranded-233"
+				title: "进入1号维度: &l搁浅-233"
 				type: "dimension"
 			}]
-			title: "欢迎来到1号维度: &lStranded-233"
+			title: "欢迎来到1号维度: &l搁浅-233"
 			x: 0.0d
 			y: 5.5d
 		}
@@ -48,10 +48,10 @@
 			tasks: [{
 				dimension: "hexahedron:copper_remains"
 				id: "2A94A3461D1CF3D5"
-				title: "进入3号维度: &lCopper Graveyard"
+				title: "进入3号维度: &l铜色墓地"
 				type: "dimension"
 			}]
-			title: "欢迎来到3号维度: &lCopper Graveyard"
+			title: "欢迎来到3号维度: &l铜色墓地"
 			x: -5.5d
 			y: 5.5d
 		}
@@ -63,10 +63,10 @@
 			tasks: [{
 				dimension: "hexahedron:stacked_rocks"
 				id: "05CC9EA5DC9AF5B9"
-				title: "进入2号纬度: &lThe Fenspire Deep"
+				title: "进入2号纬度: &l深渊沼泽"
 				type: "dimension"
 			}]
-			title: "欢迎来到2号维度: &lThe Fenspire Deep"
+			title: "欢迎来到2号维度: &l深渊沼泽"
 			x: 5.5d
 			y: 5.5d
 		}
@@ -87,7 +87,7 @@
 				item: "kubejs:tiny_party_popper"
 				type: "item"
 			}]
-			subtitle: "&oThis is my Rock Collection"
+			subtitle: "&o这是我的石头收藏"
 			tasks: [
 				{
 					count: 8L
@@ -112,7 +112,7 @@
 					type: "item"
 				}
 			]
-			title: "Collecting Rocks"
+			title: "收集石头"
 			x: 0.0d
 			y: 12.0d
 		}
@@ -127,7 +127,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "&oI've got the Power"
+			subtitle: "&o我拥有能量"
 			tasks: [{
 				id: "53B4C28A824BC23E"
 				item: "ae2:charger"
@@ -153,7 +153,7 @@
 				item: "kubejs:tiny_party_popper"
 				type: "item"
 			}]
-			subtitle: "&oVisiting the Scrap Yard"
+			subtitle: "&o参观废料场"
 			tasks: [
 				{
 					id: "2FCDB62081CE9D3D"
@@ -189,7 +189,7 @@
 				item: "kubejs:tiny_party_popper"
 				type: "item"
 			}]
-			subtitle: "&oFiring up the Engines"
+			subtitle: "&o引擎点火"
 			tasks: [
 				{
 					id: "66E129C03C037F2E"
@@ -214,7 +214,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oBurning Dead Things"
+			subtitle: "&o燃烧遗骸"
 			tasks: [{
 				id: "56FD1E6BFF61217D"
 				item: "forestry:peat"
@@ -238,7 +238,7 @@
 				item: "kubejs:tiny_party_popper"
 				type: "item"
 			}]
-			subtitle: "&oThe Fruit Would Droop"
+			subtitle: "&o果实摇摇欲坠"
 			tasks: [{
 				id: "5F9F2532F5C66DE0"
 				item: "undergarden:droopvine_item"
@@ -292,7 +292,7 @@
 					type: "item"
 				}
 			]
-			title: "Droop Soup"
+			title: "垂挂果汤"
 			x: 1.5d
 			y: 7.0d
 		}
@@ -332,13 +332,13 @@
 					type: "item"
 				}
 			]
-			subtitle: "&oTake a Polaroid Picture"
+			subtitle: "&o拍一张拍立得照片"
 			tasks: [{
 				id: "098C52F3DDF01CD9"
 				item: "exposure:camera_stand"
 				type: "item"
 			}]
-			title: "纬度旅行者"
+			title: "纬度旅者"
 			x: -1.5d
 			y: 10.0d
 		}
@@ -359,7 +359,7 @@
 			dependencies: ["331319E9F6BD173A"]
 			id: "39401DE3C32F95EC"
 			shape: "gear"
-			subtitle: "&oAlmost Autocrafting"
+			subtitle: "&o近乎自动合成"
 			tasks: [{
 				id: "2A402D5C1A9C5C35"
 				item: "forestry:worktable"

@@ -45,10 +45,10 @@
 			tasks: [{
 				dimension: "hexahedron:endless_hoard"
 				id: "7FD52FBA54C94376"
-				title: "Enter dimension 7: &lThe Coin Continuum"
+				title: "进入7号维度: &l黄金大陆"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 7: &lThe Coin Continuum"
+			title: "欢迎来到7号维度: &l黄金大陆"
 			x: -8.0d
 			y: -3.5d
 		}
@@ -60,10 +60,10 @@
 			tasks: [{
 				dimension: "hexahedron:toxic_caves"
 				id: "59C3943501FCD420"
-				title: "Enter dimension 5: &lThe Fission Fields"
+				title: "进入5号维度: &l裂变荒野"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 5: &lThe Fission Fields"
+			title: "欢迎来到5号维度: &l裂变荒野"
 			x: -14.5d
 			y: -3.5d
 		}
@@ -102,7 +102,7 @@
 			]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "&o3.6 Roentgen"
+			subtitle: "&o3.6库仑"
 			tasks: [
 				{
 					count: 8L
@@ -168,7 +168,7 @@
 					type: "item"
 				}
 			]
-			title: "Petal Apothecary"
+			title: "花药台"
 			x: 13.5d
 			y: -1.0d
 		}
@@ -240,7 +240,7 @@
 					type: "item"
 				}
 			]
-			title: "Defusing a Nuclear Bomb"
+			title: "拆除一枚核弹"
 			x: -14.5d
 			y: 6.0d
 		}
@@ -295,7 +295,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "&oPools of Silver"
+			subtitle: "&o白银之池"
 			tasks: [
 				{
 					id: "093FBC994DD37473"
@@ -308,7 +308,7 @@
 					type: "item"
 				}
 			]
-			title: "Endless Silver"
+			title: "无尽白银"
 			x: 15.0d
 			y: 6.0d
 		}
@@ -368,7 +368,7 @@
 				"1D39E9C67C28C53A"
 				"1AA2701817C05F20"
 			]
-			description: ["The Osmium Compressor allows you to infuse materials with Osmium."]
+			description: ["使用锇压缩机可将材料与锇融合。"]
 			id: "71A95CEBD6B55B80"
 			rewards: [{
 				id: "0608C5EF36783723"
@@ -410,7 +410,7 @@
 				}
 			]
 			shape: "gear"
-			subtitle: "&oWedding Bouquet"
+			subtitle: "&o手捧花"
 			tasks: [
 				{
 					id: "41C42E79C601E47D"
@@ -481,7 +481,7 @@
 				}
 			}
 			id: "62FCB4D691D5A46A"
-			subtitle: "&oSay my name"
+			subtitle: "&o说出我的名字"
 			tasks: [
 				{
 					id: "04A6FC17E1086F8B"
@@ -528,7 +528,7 @@
 					type: "item"
 				}
 			]
-			title: "Hazmat Suit"
+			title: "防化服"
 			x: 2.5d
 			y: 12.5d
 		}
@@ -552,7 +552,7 @@
 		}
 		{
 			dependencies: ["695F411874E4905F"]
-			description: ["Blocks of Emerald can be found in the Coin Continuum and broken down into Emeralds."]
+			description: ["绿宝石块可以在黄金大陆找到，将它们分解成绿宝石。"]
 			icon: "minecraft:emerald"
 			id: "1ACBFD0A2732FA5C"
 			rewards: [{
@@ -560,7 +560,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oBreaking News!"
+			subtitle: "&o突发新闻！"
 			tasks: [
 				{
 					id: "5B8A02A45FC0D682"
@@ -644,7 +644,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "&oBeryllium Shell"
+			subtitle: "&o铍壳"
 			tasks: [
 				{
 					id: "586EDB2CDF9520BF"
@@ -657,7 +657,7 @@
 					type: "item"
 				}
 			]
-			title: "Creating more Cores"
+			title: "制造更多核心"
 			x: 1.5d
 			y: 16.0d
 		}
@@ -709,7 +709,7 @@
 					type: "item"
 				}
 			]
-			title: "The Goop Cycle"
+			title: "黏液循环"
 			x: 2.5d
 			y: 14.5d
 		}
@@ -728,7 +728,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "&oFast Travel"
+			subtitle: "&o快速旅行"
 			tasks: [{
 				id: "32EC34EFB522CF75"
 				item: "kubejs:portal_lantern"
@@ -751,7 +751,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "&oWe're Rich!"
+			subtitle: "&o我们发财了！"
 			tasks: [{
 				id: "3AF2854D7E028E52"
 				item: "mekanism:enrichment_chamber"
@@ -793,7 +793,7 @@
 					type: "item"
 				}
 			]
-			title: "Zinc Quarry"
+			title: "锌矿场"
 			x: -1.5d
 			y: -1.0d
 		}
@@ -818,7 +818,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "&oTimey Wimey"
+			subtitle: "&o时空错乱"
 			tasks: [
 				{
 					id: "1C3B924AC31266AA"
@@ -831,7 +831,7 @@
 					type: "item"
 				}
 			]
-			title: "Rewinding Time"
+			title: "时光倒流"
 			x: 0.0d
 			y: -0.5d
 		}
@@ -892,7 +892,7 @@
 				item: "mekanism:nugget_osmium"
 				type: "item"
 			}]
-			title: "Osmium Mining"
+			title: "锇矿开采"
 			x: 9.5d
 			y: -1.0d
 		}
@@ -936,7 +936,7 @@
 			]
 			shape: "gear"
 			size: 2.5d
-			subtitle: "&oThinking Out of the Box"
+			subtitle: "&o打破常规思维"
 			tasks: [{
 				count: 2L
 				id: "71B49964272A7AEA"
@@ -952,7 +952,7 @@
 		}
 		{
 			dependencies: ["695F411874E4905F"]
-			description: ["The somewhat rare Diamond lamps can be crushed into Diamonds."]
+			description: ["这些较为稀有的钻石灯可以被粉碎成钻石。"]
 			icon: "minecraft:diamond"
 			id: "66858347C4FDB6F3"
 			rewards: [{
@@ -960,7 +960,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oShine Bright"
+			subtitle: "&o闪耀光芒"
 			tasks: [
 				{
 					id: "6E95067E0B646577"
@@ -973,7 +973,7 @@
 					type: "item"
 				}
 			]
-			title: "Hoarding Diamonds"
+			title: "囤积钻石"
 			x: -9.5d
 			y: -1.0d
 		}
@@ -1001,7 +1001,7 @@
 					type: "item"
 				}
 			]
-			title: "Renewable Gold"
+			title: "可再生黄金"
 			x: -6.5d
 			y: -1.0d
 		}
@@ -1010,7 +1010,7 @@
 				"1D39E9C67C28C53A"
 				"1ACBFD0A2732FA5C"
 			]
-			description: ["You can speed up machines using the stored time inside The Timestone."]
+			description: ["你可以使用时间之石内储存的时间来加速机器运行。"]
 			icon: {
 				Count: 1
 				id: "tiab:time_in_a_bottle"
@@ -1022,7 +1022,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oI Have Come to Bargain"
+			subtitle: "&o我是来谈条件的"
 			tasks: [
 				{
 					id: "355D98976D5F681B"
@@ -1039,7 +1039,7 @@
 					type: "item"
 				}
 			]
-			title: "Obtaining a Timestone"
+			title: "获得时间之石"
 			x: -1.5d
 			y: 2.5d
 		}
@@ -1214,7 +1214,7 @@
 					type: "item"
 				}
 			]
-			title: "Nuclear Power"
+			title: "核能之力"
 			x: -1.5d
 			y: 12.0d
 		}
@@ -1270,10 +1270,10 @@
 					type: "item"
 				}
 			]
-			title: "Pack your Bags"
+			title: "收拾行李"
 			x: 7.0d
 			y: 1.0d
 		}
 	]
-	title: "Chapter 3"
+	title: "第3章"
 }

@@ -17,10 +17,10 @@
 			tasks: [{
 				dimension: "hexahedron:endless_rainbows"
 				id: "19CDAC83434F4509"
-				title: "Enter dimension 14: &lExtraterrestrial Hills"
+				title: "进入14号维度: &l地外丘陵"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 14: &lExtraterrestrial Hills"
+			title: "欢迎来到14号维度: &l地外丘陵"
 			x: -8.0d
 			y: -1.5d
 		}
@@ -205,10 +205,10 @@
 			tasks: [{
 				dimension: "hexahedron:the_umbral_sea"
 				id: "0D079CF1C15D332F"
-				title: "Enter dimension 48: &lThe Umbral Sea"
+				title: "进入48号维度: &l暗影之海"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 48: &lThe Umbral Sea"
+			title: "欢迎来到48号维度: &l暗影之海"
 			x: 5.5d
 			y: -1.5d
 		}
@@ -237,10 +237,10 @@
 			tasks: [{
 				dimension: "hexahedron:soul_valley"
 				id: "65E04DCA1BB15A66"
-				title: "Enter dimension 36: &lThe Lost Valley"
+				title: "进入36号维度: &l失落谷地"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 36: &lThe Lost Valley"
+			title: "欢迎来到36号维度: &l失落谷地"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -483,10 +483,10 @@
 			tasks: [{
 				dimension: "hexahedron:dusk_islands"
 				id: "5DEAAE647D9C7F6B"
-				title: "Enter dimension 13: &lStorm Islands"
+				title: "进入13号维度: &l风暴群岛"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 13: &lStorm Islands"
+			title: "欢迎来到13号维度: &l风暴群岛"
 			x: -15.0d
 			y: -1.5d
 		}
@@ -890,7 +890,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "&oI Got a Pet"
+			subtitle: "&o我得到了一只宠物"
 			tasks: [{
 				id: "0DE7FBA6919CAAA8"
 				item: "undergarden:gronglet"

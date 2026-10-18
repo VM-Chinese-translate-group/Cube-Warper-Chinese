@@ -29,7 +29,7 @@
 		}
 		{
 			dependencies: ["68774479098E8235"]
-			description: ["The Flamethrower is a powerful weapon that deals direct AOE burning damage to your targets."]
+			description: ["火焰喷射器是一种强大的武器，能对目标造成范围燃烧伤害。"]
 			icon: {
 				Count: 1
 				id: "clanginghowl:flamethrower"
@@ -112,7 +112,7 @@
 				"5F9D8874286DFFA0"
 				"0921248B4773650A"
 			]
-			description: ["The Magma Crucible will be able to smelt any Glowstone into Energized Glowstone."]
+			description: ["熔岩炉能够将荧石熔炼成充能荧石。"]
 			id: "22452FEA02C38183"
 			rewards: [{
 				id: "2D16CDEA905C617F"
@@ -136,7 +136,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oAn Endoflame, what is that?"
+			subtitle: "&o火红莲，那是什么？"
 			tasks: [
 				{
 					id: "15B6ACE5F8B04605"
@@ -195,7 +195,7 @@
 					type: "item"
 				}
 			]
-			title: "Runic Altar"
+			title: "符文祭坛"
 			x: 4.0d
 			y: 18.0d
 		}
@@ -302,7 +302,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "&oPour it While its Hot"
+			subtitle: "&o趁热倒进去"
 			tasks: [
 				{
 					count: 2L
@@ -344,7 +344,7 @@
 					type: "item"
 				}
 			]
-			title: "Building a Foundry"
+			title: "建造熔炼炉"
 			x: -13.0d
 			y: 21.5d
 		}
@@ -378,7 +378,7 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			title: "Crushing Wheels"
+			title: "粉碎轮"
 			x: -4.0d
 			y: 18.0d
 		}
@@ -399,7 +399,7 @@
 		}
 		{
 			dependencies: ["585121A406995B35"]
-			description: ["You can find the occasional Runewood Tree in this dimension. Make sure you keep some alive to harvest their sap."]
+			description: ["在这个维度中你偶尔能找到符文树。确保留一些不要砍掉，以便采集它们的树液。"]
 			id: "3566CE49C98A4730"
 			rewards: [{
 				id: "457894353EAB5716"
@@ -645,7 +645,7 @@
 					type: "item"
 				}
 			]
-			title: "Smashing Runes"
+			title: "粉碎符文"
 			x: 11.5d
 			y: 24.5d
 		}
@@ -976,7 +976,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "&oBig Furnace"
+			subtitle: "&o大型熔炉"
 			tasks: [
 				{
 					id: "7C4A693305F1365B"
@@ -1015,7 +1015,7 @@
 					type: "item"
 				}
 			]
-			title: "Coke Oven"
+			title: "焦炉"
 			x: -13.0d
 			y: 18.0d
 		}
@@ -1132,7 +1132,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oHell is Full, Blood is Fuel"
+			subtitle: "&o地狱已满，鲜血即燃料"
 			tasks: [
 				{
 					id: "0869763966918BAF"
@@ -1168,7 +1168,7 @@
 					type: "item"
 				}
 			]
-			title: "Renewable Iron"
+			title: "可再生铁"
 			x: -5.5d
 			y: 10.5d
 		}
@@ -1213,7 +1213,7 @@
 				item: "kubejs:party_popper"
 				type: "item"
 			}]
-			subtitle: "&oThere are no Strings on me"
+			subtitle: "&o我已挣脱束缚"
 			tasks: [
 				{
 					id: "5FBC56DCE14617A0"
@@ -1231,7 +1231,7 @@
 					type: "item"
 				}
 			]
-			title: "Wireless Terminal"
+			title: "无线终端"
 			x: 0.0d
 			y: 22.5d
 		}
@@ -1312,7 +1312,7 @@
 					type: "item"
 				}
 			]
-			title: "Brimstone Generator"
+			title: "硫磺发电机"
 			x: -14.5d
 			y: 10.5d
 		}
@@ -1382,5 +1382,5 @@
 			y: 12.5d
 		}
 	]
-	title: "Chapter 4"
+	title: "第4章"
 }

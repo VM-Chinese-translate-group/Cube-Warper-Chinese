@@ -74,7 +74,7 @@
 				}
 			}
 			id: "722B22AF736527D1"
-			subtitle: "&oYes there is Veinminer"
+			subtitle: "&o是的，这是连锁挖掘"
 			tasks: [{
 				id: "61ABF0B11CAED1DA"
 				title: "我会破坏一切！"
@@ -101,7 +101,7 @@
 				}
 			}
 			id: "186BE3D50FBAC8D8"
-			subtitle: "&oLoading what you are not Observing"
+			subtitle: "&o加载你所未加载的"
 			tasks: [{
 				id: "307755245B1A4BD4"
 				title: "区块将被加载"
@@ -221,7 +221,7 @@
 			subtitle: "&o知识就是力量"
 			tasks: [{
 				id: "2A1B1F6C6EC3CF19"
-				title: "Hand over the Library"
+				title: "交出图书馆"
 				type: "checkmark"
 			}]
 			title: "阿卡什宝典"
@@ -242,7 +242,7 @@
 				title: "明白"
 				type: "checkmark"
 			}]
-			title: "Load Chunks with care"
+			title: "慎重加载区块"
 			x: 5.0d
 			y: 1.5d
 		}
@@ -263,7 +263,7 @@
 				title: "明白"
 				type: "checkmark"
 			}]
-			title: "In Case of Emergency"
+			title: "紧急情况"
 			x: -4.5d
 			y: 1.5d
 		}
