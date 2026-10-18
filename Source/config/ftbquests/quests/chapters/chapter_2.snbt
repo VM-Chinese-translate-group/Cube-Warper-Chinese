@@ -943,6 +943,56 @@
 			x: -3.0d
 			y: 25.5d
 		}
+		{
+			dependencies: ["5062CBABFE108855"]
+			description: [
+				"You can create Flawed Budding Certus blocks using the Crystallizer."
+				""
+				"The Growth Accelerator will need to be hooked up to the ME-System and will speed up the growth of the crystals significantly."
+			]
+			icon: "ae2:flawed_budding_quartz"
+			id: "114FBF1B629A980D"
+			rewards: [{
+				id: "24B93F9A55034392"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4D99F47F1EF86F1B"
+					item: "ae2:growth_accelerator"
+					type: "item"
+				}
+				{
+					id: "2CE1537E3A37F3D7"
+					item: "ae2:quartz_block"
+					type: "item"
+				}
+				{
+					id: "7C2891660AB693E1"
+					item: "ae2:charged_certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "18A85B1D3F817076"
+					item: "ae2:damaged_budding_quartz"
+					type: "item"
+				}
+				{
+					id: "0E4425713D05D6EB"
+					item: "ae2:chipped_budding_quartz"
+					type: "item"
+				}
+				{
+					id: "56E4085091468CE8"
+					item: "ae2:flawed_budding_quartz"
+					type: "item"
+				}
+			]
+			title: "Budding Certus"
+			x: 3.0d
+			y: 22.0d
+		}
 	]
 	title: "Chapter 2"
 }
