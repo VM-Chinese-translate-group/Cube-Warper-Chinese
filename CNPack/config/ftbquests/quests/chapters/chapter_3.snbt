@@ -30,10 +30,10 @@
 			tasks: [{
 				dimension: "hexahedron:silver_forest"
 				id: "0B120370B39C12EE"
-				title: "Enter dimension 18: &lThe Silver Forest"
+				title: "进入18号维度: &l白银森林"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 18: &lThe Silver Forest"
+			title: "欢迎来到18号维度: &l白银森林"
 			x: 15.0d
 			y: -3.5d
 		}
@@ -73,18 +73,17 @@
 				"10B4D789801FA7A3"
 			]
 			description: [
-				"The Nuclear Furnace can be contructed with eight nuclear Furnace Components."
+				"核能熔炉可由八个核能熔炉部件搭建而成。"
 				""
-				"If it is fueled with Uranium Rods it can turn:"
+				"若以铀棒为燃料，它可将："
 				""
-				"&lo&r Empty Vector Operators into Nuclear Vector Operators"
+				"&lo&r 空矢量算子转化为核能矢量算子"
 				""
-				"&lo&r Empty Shells into Fissile Cores"
+				"&lo&r 空壳转化为裂变核心"
 				""
-				"In this process the nuclear furnace will accumulate nuclear waste."
-				"You can remove this by providing it with Metal Barrels."
+				"在此过程中，核能熔炉会积累核废料。你可以通过放入金属桶来清除这些废料。"
 				""
-				"&lIf you let the internal waste resevour fill up to the maximum limit the furnace will destroy itself and everything around it in a nuclear meltdown.&r"
+				"&l如果内部废料储存至上限，熔炉将发生核熔毁，并摧毁自身及周围的一切。&r"
 			]
 			icon: "alexscaves:fissile_core"
 			id: "59B914C684A5EE4C"
@@ -121,13 +120,13 @@
 					type: "item"
 				}
 			]
-			title: "Constructing a Nuclear Furnace"
+			title: "建造核能熔炉"
 			x: 0.0d
 			y: 14.5d
 		}
 		{
 			dependencies: ["07D4A4DCB638CC93"]
-			description: ["Using the Thermionic Fabricator you can now create new Empty Vector Operators."]
+			description: ["使用热电子加工台，你现在可以制作新的空矢量算子。"]
 			icon: "kubejs:vector_operator_empty"
 			id: "3EFB28B57ACCA844"
 			tasks: [
@@ -138,7 +137,7 @@
 				}
 				{
 					id: "5D4B0F03237F7E1B"
-					title: "Understood"
+					title: "明白"
 					type: "checkmark"
 				}
 			]
@@ -180,27 +179,27 @@
 			tasks: [{
 				dimension: "hexahedron:snowstorm"
 				id: "04015132771AEC69"
-				title: "Enter dimension 12: &lThe Frostbloom Storm"
+				title: "进入12号维度: &l霜花风暴"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 12: &lThe Frostbloom Storm"
+			title: "欢迎来到12号维度: &l霜花风暴"
 			x: 8.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["724BF4D8D1DA930D"]
 			description: [
-				"You will need to difuse a nuclear bomb to obtain the Fission Core within."
+				"你需要拆除一枚核弹，才能获得其中的裂变核心。"
 				""
-				"First use a Crowbar to pry the top off of the bomb."
+				"首先用撬棍撬开炸弹顶部。"
 				""
-				"Then use Wire Cutters to cut one of the wires."
-				"Left-clicking will cut the red wire."
-				"Right-clicking will cut the green wire."
+				"然后用剪线钳剪断其中一根电线。"
+				"左键点击会剪断红色电线。"
+				"右键点击会剪断绿色电线。"
 				""
-				"One wire will difuse the bomb; the other will rig the device to explode within 10 seconds."
+				"一根电线会拆除炸弹；另一根则会引爆装置，使其在10秒内爆炸。"
 				""
-				"The correct wire, unfortunately, is always fully random..."
+				"不幸的是，正确的那根电线完全随机……"
 			]
 			icon: "alexscaves:nuclear_bomb"
 			id: "79CA283CB3EAD8A8"
@@ -216,7 +215,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "&oNow I am Become Death"
+			subtitle: "&o现在我有点死了"
 			tasks: [
 				{
 					id: "34C9DB7C87F14F4F"
@@ -249,7 +248,7 @@
 				"79CA283CB3EAD8A8"
 				"07D4A4DCB638CC93"
 			]
-			description: ["The ME Controller will dramatically improve the number of channels you can have in your ME System."]
+			description: ["ME控制器将大幅提升你的ME系统可容纳的频道数量。"]
 			id: "1F81CCC1F7562C57"
 			rewards: [{
 				id: "269D3C4BEC9195C7"
@@ -264,7 +263,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "&oI got this from a Chance Cube"
+			subtitle: "&o我从机会方块中拿到了这个"
 			tasks: [{
 				id: "1600D6054496DF25"
 				item: "ae2:controller"
@@ -276,11 +275,11 @@
 		{
 			dependencies: ["7F8A84E6792D57C5"]
 			description: [
-				"The Silver Forest has endless silver oceans."
+				"白银森林有着无尽的白银海洋。"
 				""
-				"If you right-click a filled bucket on a smeltery drain, it will fill the smeltery up with that liquid."
+				"如果你用一个装满的桶对着冶炼厂排液口右击，它就会把里面的液体填充进冶炼厂。"
 				""
-				"Alternatively, you can pump any liquid into a smeltery drain as well."
+				"或者，你也可以把任何液体泵入冶炼厂排液口。"
 			]
 			icon: "thermal:silver_ingot"
 			id: "706CFA622308E0A2"
@@ -335,7 +334,7 @@
 				"3811EE766D2CF5C5"
 				"0C64583682770587"
 			]
-			description: ["The Thermionic Fabricator can make Electron tubes using power and a supply of sand. It will need some time to heat up the sand into molten glass before it starts crafting."]
+			description: ["热电子加工台可以使用能量和沙子来制造电子管。它需要一些时间将沙子加热成熔融玻璃，然后才能开始制作。"]
 			icon: "forestry:fabricator"
 			id: "07D4A4DCB638CC93"
 			rewards: [{
@@ -344,7 +343,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "&oTher-mi-o-nic"
+			subtitle: "&o热-电-子"
 			tasks: [
 				{
 					id: "6831EA1AA0E107B2"
@@ -391,9 +390,9 @@
 				"1D855C82AF9E2087"
 			]
 			description: [
-				"Any flower can be turned into Mystical Petals of its color. The rare Snowdrop in The Frostbloom Storm gives the white petals needed for a Pure Daisy."
+				"任何花都可以转化为其对应颜色的神秘花瓣。霜花风暴中稀有的雪滴花能提供白雏菊所需的白色花瓣。"
 				""
-				"The Pure Daisy can turn Deepslate into Brilliant Deepslate."
+				"白雏菊可以将深板岩转化为深层经验晶矿石。"
 			]
 			icon: "botania:pure_daisy"
 			id: "1AA2701817C05F20"
@@ -433,7 +432,7 @@
 					type: "item"
 				}
 			]
-			title: "Pure Daisy"
+			title: "白雏菊"
 			x: 8.0d
 			y: 6.0d
 		}
@@ -441,7 +440,7 @@
 			dependencies: ["724BF4D8D1DA930D"]
 			icon: "alexscaves:sulfur_dust"
 			id: "0B89BA14A34F6DC3"
-			subtitle: "&oTaste the Flames of Sulfuron!"
+			subtitle: "&o尝尝Sulfuron的烈焰吧！"
 			tasks: [{
 				id: "382C5C84F7648F0A"
 				item: "alexscaves:sulfur_dust"
@@ -455,7 +454,7 @@
 				"7EBA57DECDEF83EB"
 				"56A2089DBDAAEA29"
 			]
-			description: ["Uranium Rods will be needed to fuel the Nuclear Furnace."]
+			description: ["铀棒将用于为核能熔炉提供燃料。"]
 			id: "10B4D789801FA7A3"
 			rewards: [{
 				id: "5E3B69185D39EE9E"
@@ -472,7 +471,7 @@
 		}
 		{
 			dependencies: ["7EBA57DECDEF83EB"]
-			description: ["The Hazmat Suit will not only protect you from radiation but will also allow the wearer to smim in acid."]
+			description: ["防化服不仅能保护你免受辐射伤害，还能让穿戴者在酸液中游泳。"]
 			icon: {
 				Count: 1
 				id: "alexscaves:hazmat_mask"
@@ -534,7 +533,7 @@
 		}
 		{
 			dependencies: ["1D855C82AF9E2087"]
-			description: ["Osmium can found in the ground of this dimension between the Shiverstone."]
+			description: ["锇可以在这个维度地下的在寒栗石中找到。"]
 			icon: "mekanism:ingot_osmium"
 			id: "1DF9F6C26950EFBC"
 			rewards: [{
@@ -578,14 +577,14 @@
 		}
 		{
 			dependencies: ["59B914C684A5EE4C"]
-			description: ["You can Shift-right-click a Uranium Rod in you inventory to fully recharge an empty Raygun."]
+			description: ["你可以在物品栏中按住Shift键并右键点击铀棒，将空的射线枪完全充能。"]
 			id: "40111918A62390D4"
 			rewards: [{
 				id: "07283CC098CF728C"
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oNo Portal Fluid Needed"
+			subtitle: "&o无需加入液体"
 			tasks: [{
 				id: "1EDE38ACE6BB5584"
 				item: "alexscaves:raygun"
@@ -596,7 +595,7 @@
 		}
 		{
 			dependencies: ["724BF4D8D1DA930D"]
-			description: ["Right-clicking empty bottles on Toxic Geothermal vents will fill them with Radon Gas."]
+			description: ["对有毒地热喷口使用空瓶右键点击，即可将其填充为氡气。"]
 			icon: "alexscaves:radon_bottle"
 			id: "3811EE766D2CF5C5"
 			rewards: [{
@@ -610,7 +609,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "&o&oThis Place is Still Better than Bilewater"
+			subtitle: "&o&o这地方还是比胆汁强"
 			tasks: [
 				{
 					id: "475FC54BA27348E2"
@@ -623,13 +622,13 @@
 					type: "item"
 				}
 			]
-			title: "Collecting Radon"
+			title: "收集氡"
 			x: -13.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["59B914C684A5EE4C"]
-			description: ["Using the Nuclear Furnace Fissile Cores are now renewable."]
+			description: ["借助核能熔炉，裂变核心现在可以再生了。"]
 			icon: "kubejs:empty_shell"
 			id: "66D36B4E2249E0C2"
 			rewards: [
@@ -669,10 +668,10 @@
 			tasks: [{
 				dimension: "hexahedron:pine_forrest"
 				id: "62B70AA399403623"
-				title: "Enter dimension 8: &lTimber Lakes"
+				title: "进入8号维度: &l林间湖泊"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 8: &lTimber Lakes"
+			title: "欢迎来到8号维度: &l林间湖泊"
 			x: 0.0d
 			y: -3.5d
 		}
@@ -692,9 +691,9 @@
 		{
 			dependencies: ["59B914C684A5EE4C"]
 			description: [
-				"A steam engine placed above an active nuclear furnace will be automatically heated to &lthe maximum heat level&r. "
+				"放置在运行中的核能熔炉上方的蒸汽引擎会自动被加热至&l最高热量等级&r。"
 				""
-				"You can keep cycling goop through the furnace to keep it active. This will practically create the equivalent of a nuclear reactor."
+				"你可以通过让烂泥持续循环流经熔炉来维持其运行。这实际上等同于建造了一个核反应堆。"
 			]
 			id: "7FE20D4DE2E912CB"
 			tasks: [
@@ -715,7 +714,7 @@
 		}
 		{
 			dependencies: ["07D4A4DCB638CC93"]
-			description: ["Right-clicking a Recall Tube will teleport the user to the inside of the Hexahedron, even when the Hexahedron is in a different dimension."]
+			description: ["右击召回器会将玩家传送到立方体内部，即使立方体位于不同的维度。"]
 			id: "50553C4CCED700E3"
 			rewards: [{
 				id: "189A00A8DAF2A461"
@@ -742,7 +741,7 @@
 				"1AA2701817C05F20"
 				"71A95CEBD6B55B80"
 			]
-			description: ["The Enrichment Chamber allows you to refine Uranium Shards into Yellow Cake Uranium."]
+			description: ["富集仓可将铀晶富集为黄饼铀。"]
 			id: "56A2089DBDAAEA29"
 			rewards: [{
 				id: "10C8293B5CD27674"
@@ -763,9 +762,9 @@
 		{
 			dependencies: ["0F12939AF08CC493"]
 			description: [
-				"The entire Timber Lakes consists of Asurine blow the surface. "
+				"整个林间湖泊的地表以下全部由皓蓝石构成。"
 				""
-				"If you can quarry and pulverize this mineral you can produce endless Zinc Ingots."
+				"如果你能开采并粉碎这种矿物，你就能生产出无尽的锌锭。"
 			]
 			icon: "create:zinc_ingot"
 			id: "0C64583682770587"
@@ -775,7 +774,7 @@
 				type: "item"
 			}]
 			shape: "octagon"
-			subtitle: "&oLet that Zinc in"
+			subtitle: "&o让锌进来吧"
 			tasks: [
 				{
 					id: "1C09FDFDFBCF2250"
@@ -800,15 +799,15 @@
 		{
 			dependencies: ["0F12939AF08CC493"]
 			description: [
-				"Using the shrine in Timber Lakes you can rewind the time of certain blocks."
+				"使用林间湖泊的神龛，你可以逆转某些方块的时间。"
 				""
-				"The conversions are as follows:"
+				"转换关系如下："
 				""
-				"&lo&r Block of Iron -> Block of Shiny Ingot"
+				"&lo&r铁块 -> 闪耀锭块"
 				""
-				"&lo&r Empty Vector Operator -> Old Vector"
+				"&lo&r空矢量算子 -> 远古矢量"
 				""
-				"&lo&r Block of Emerald -> The Time Stone"
+				"&lo&r绿宝石块 -> 时间之石"
 			]
 			icon: "supplementaries:clock_block"
 			id: "1D39E9C67C28C53A"
@@ -838,9 +837,9 @@
 		{
 			dependencies: ["7F8A84E6792D57C5"]
 			description: [
-				"Livingrock boulders can be found naturally in this dimension."
+				"活石会自然生成于这个维度。"
 				""
-				"Stone generators in this dimension will also generate Livingrock."
+				"这个维度中的刷石机也会生成活石。"
 			]
 			icon: "botania:livingrock"
 			id: "22556B2096D509A1"
@@ -853,7 +852,7 @@
 				}
 				{
 					id: "09442B32ADB2D16E"
-					title: "Understood"
+					title: "明白"
 					type: "checkmark"
 				}
 			]
@@ -863,13 +862,13 @@
 		{
 			dependencies: ["724BF4D8D1DA930D"]
 			description: [
-				"You can generate infinite Uranium by crushing Radrock."
+				"你可以通过粉碎辐射石来无限生成铀。"
 				""
-				"Any stone generator located in the Fission Fields will generate Radrock instead of Cobblestone."
+				"位于裂变荒野的任何刷石机都会生成辐射石而不是圆石。"
 			]
 			id: "4B1F78DCF2E2C538"
 			shape: "octagon"
-			subtitle: "&oKovarex Enrichment Process "
+			subtitle: "&o辐射富集工艺"
 			tasks: [{
 				id: "355C0FC8AA39627A"
 				item: "alexscaves:uranium_shard"
@@ -881,9 +880,9 @@
 		{
 			dependencies: ["1D855C82AF9E2087"]
 			description: [
-				"Shiverstone can be crushed or pulverized for Osmium Nuggets."
+				"寒栗石可以被粉碎以获得锇粒。"
 				""
-				"Stone generators located in the frostbloom storm will generate Shiverstone instead of regular Cobblestone."
+				"位于霜花风暴中的刷石机会生成寒栗石而非圆石。"
 			]
 			id: "1AD73B0A7B843C82"
 			shape: "octagon"
@@ -899,20 +898,20 @@
 		{
 			dependencies: ["1F81CCC1F7562C57"]
 			description: [
-				"&lThe Interdimensional Transceiver is a crucial block when it comes to setting up interdimensional automation.&r"
+				"&l无线收发器是实现跨维度自动化的关键方块。&r"
 				""
-				"&lStep 1&r"
-				"Start by placing the first Transceiver inside your main base; make sure it's hooked up to a powered ME System and click on \"Mode\" to make it a sender."
+				"&l第1步&r"
+				"首先将第一个收发器放置在你的主基地内；确保它连接到一个已供电的ME系统，然后点击“模式”将其设置为发送端。"
 				""
 				"{image:kubejs:textures/questbook/book_images/transceiver_step1.png width:84 height:67 align:center}"
 				""
-				"&lStep 2&r"
-				"Next, make a new channel by clicking \"Add\" and give it any name. Click on it in the list to select it."
+				"&l第2步&r"
+				"接下来，点击“添加”创建一个新频道，并为其随意命名。在列表中点击它以选中。"
 				""
 				"{image:kubejs:textures/questbook/book_images/transceiver_step2.png width:84 height:67 align:center}"
 				""
-				"&lStep 3&r"
-				"Now that the sender is set up, you can place an infinite number of Transceivers anywhere and hook them all up to the same sending Transceiver by clicking the channel you made in the list."
+				"&l第2步&r"
+				"现在发送端已设置完毕，你可以在任意位置放置多个收发器，并通过点击列表中你创建的频道将它们全部连接到同一个发送端收发器。"
 			]
 			icon: "aewireless:wireless_transceiver"
 			id: "1303271D201C87A7"
@@ -946,7 +945,7 @@
 				}
 				type: "item"
 			}]
-			title: "Interdimensional Transceiver"
+			title: "跨维度收发器"
 			x: -4.5d
 			y: 9.0d
 		}
@@ -979,7 +978,7 @@
 		}
 		{
 			dependencies: ["695F411874E4905F"]
-			description: ["You can obtain infinite gold by melting gold coins. Any stone generator in The Coin Continiuum will generate gold coins instead."]
+			description: ["通过熔炼金币，你可以获得无限黄金。在黄金大陆中，任何刷石机都会生成金币而不是圆石。"]
 			icon: "minecraft:gold_ingot"
 			id: "1421E91BC9378574"
 			rewards: [{
@@ -988,7 +987,7 @@
 				type: "item"
 			}]
 			shape: "octagon"
-			subtitle: "&oKing under the Mountain"
+			subtitle: "&o山下之王"
 			tasks: [
 				{
 					id: "72D9F2A3C755E19C"
@@ -1045,7 +1044,7 @@
 		}
 		{
 			dependencies: ["1D39E9C67C28C53A"]
-			description: ["You can create new Old Vectors by placing empty Vector Operators on the pedestal and pressing the button to rewind time."]
+			description: ["你可以在基座上放置空矢量算子并按下按钮来回溯时间，从而制作新远古矢量。"]
 			icon: "kubejs:vector_operator_basic"
 			id: "0721C1EEAD957574"
 			rewards: [{
@@ -1054,7 +1053,7 @@
 				item: "kubejs:vector_operator_basic"
 				type: "item"
 			}]
-			subtitle: "&oIts Rewind Time"
+			subtitle: "&o时间倒流"
 			tasks: [
 				{
 					id: "5DFDEE42453CDB0B"
@@ -1068,11 +1067,11 @@
 				}
 				{
 					id: "3383F1DBF8B0854A"
-					title: "Time has been Folded"
+					title: "时间已被折叠"
 					type: "checkmark"
 				}
 			]
-			title: "Timewarping Vectors"
+			title: "时空扭曲矢量"
 			x: 1.5d
 			y: 2.5d
 		}
@@ -1085,7 +1084,7 @@
 				item: "kubejs:tiny_party_popper"
 				type: "item"
 			}]
-			subtitle: "&oThats Lapis"
+			subtitle: "&o那是青金石"
 			tasks: [
 				{
 					id: "6211FC6F1094E6DA"
@@ -1107,9 +1106,9 @@
 				"724BF4D8D1DA930D"
 			]
 			description: [
-				"You can now store your power in the ME System. "
+				"现在你可以将能量储存到ME系统中了。"
 				""
-				"This is convenient now, but it becomes crucial later on when your ME System goes interdimensional."
+				"这在现在很实用，当你的ME系统跨越维度时，它会变得至关重要。"
 			]
 			icon: "appflux:energy_processor"
 			id: "032F81B9942E156B"
@@ -1118,7 +1117,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oPlease Download Additional RAM"
+			subtitle: "&o请加载更多内存"
 			tasks: [
 				{
 					id: "5676E466FA439A96"
@@ -1151,18 +1150,18 @@
 					type: "item"
 				}
 			]
-			title: "Upload your Power"
+			title: "上传你的能量"
 			x: -15.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["10B4D789801FA7A3"]
 			description: [
-				"You can make a Dynamo that runs on Uranium Fuel Rods."
+				"你可以制作一个使用铀棒的发电机。"
 				""
-				"One Uranium Rod will burn for "
-				"30 minutes and will output a steady "
-				"500 RF/t as long as the Dynamo can output its power."
+				"一根铀棒可以燃烧30分钟，"
+				"并稳定输出500 RF/t，"
+				"前提是发电机能够输出其电力。"
 			]
 			icon: {
 				Count: 1
@@ -1221,9 +1220,9 @@
 		{
 			dependencies: ["1D855C82AF9E2087"]
 			description: [
-				"Frozen Flesh can be smelted into Leather. With the Cattails in dimension 2 you will be able to make string. "
+				"霜腐肉可烧炼成皮革。配合2号维度中的香蒲可制作线。"
 				""
-				"This will allow you to make Backpacks."
+				"这样你就能制作背包了。"
 			]
 			icon: {
 				Count: 1

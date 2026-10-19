@@ -86,9 +86,9 @@
 		{
 			dependencies: ["141D5FA7C09C176A"]
 			description: [
-				"The Smeltery can melt cannonballs obtained from dimension 1 into molten lead."
+				"冶炼炉可以将从1号维度获得炮弹熔化成熔融铅。"
 				""
-				"You can cast molten lead into either Lead Ingots or Blocks of Lead."
+				"你可以将熔融铅浇筑成铅锭或铅块。"
 			]
 			icon: "tconstruct:smeltery_controller"
 			id: "6A4BA7BAD1500457"
@@ -176,7 +176,7 @@
 				"27F373FB15FA7C80"
 				"6A4BA7BAD1500457"
 			]
-			description: ["You can add the two parts of a Machine Frame together by placing the bottom half into the world and then right-clicking the top half onto it."]
+			description: ["你可以将机器框架的两部分组合在一起，先将下半部分放下来，然后手持上半部分右击它。"]
 			id: "7B40E840FEA205E1"
 			rewards: [
 				{
@@ -196,7 +196,7 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "&oNeeds Flex Tape™"
+			subtitle: "&o需要强力胶"
 			tasks: [
 				{
 					id: "6C6C168E38FA90BC"
@@ -357,9 +357,9 @@
 		{
 			dependencies: ["57972A3714FCB9BE"]
 			description: [
-				"You can now store your items on a Storage Cell. "
+				"现在你可以将物品存储在存储元件上了。"
 				""
-				"The biggest part of AE2 is quite cheap so that you have the tools to automate things early."
+				"AE2的大部分东西都相当便宜，因此你在早期就有工具来实现自动化。"
 			]
 			icon: {
 				Count: 1
@@ -428,9 +428,9 @@
 				"5A3080407E21CCC2"
 			]
 			description: [
-				"The Magmatic Dynamo can generate energy using lava."
+				"热力能源炉可以使用熔岩产生能量。"
 				""
-				"For now you will have to bucket the lava in yourself. But you will be able to automatically pump endless magma lakes from this dimension into the hexahedron in the next chapter."
+				"目前你必须自己用桶装熔岩。但在下一章中，你将学会如何自动从这个维度的无尽岩浆湖中抽取熔岩并泵入立方体中。"
 			]
 			id: "67DA5464418D95A8"
 			rewards: [
@@ -469,9 +469,9 @@
 		{
 			dependencies: ["37942CC359146473"]
 			description: [
-				"Galena can be pulverised into Silicon using the pulverizer."
+				"方铅矿可以被粉碎机粉碎成硅。"
 				""
-				"Do note that stone generators in Ferrum-6 generate Galena."
+				"请注意，在铁穹-6中的刷石机会生成方铅矿。"
 			]
 			icon: "ae2:silicon"
 			id: "70563D25C851EDE2"
@@ -505,11 +505,11 @@
 				"5A3062A00E9E98F9"
 			]
 			description: [
-				"With Copper and a bit of Iron you can make a passive Steam Engine."
+				"用铜和少量铁就能制作一台蒸汽引擎。"
 				""
-				"You can use Fluiducts and a servo to supply the boiler with water."
+				"你可以使用流体管道和伺服器为储罐供水。"
 				""
-				"This will create a basic constant source of rotation."
+				"这将创造出一个基础的动力来源。"
 				""
 				"{image:kubejs:textures/questbook/book_images/steam_engine.png width:192 height:108 align:center}"
 			]
@@ -871,7 +871,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "&oElectrical Kiln"
+			subtitle: "&o电炉"
 			tasks: [{
 				id: "1B37EA496387E69E"
 				item: "forestry:smelter"
@@ -883,9 +883,9 @@
 		{
 			dependencies: ["57972A3714FCB9BE"]
 			description: [
-				"With a crafting unit multiblock, you can automate any recipe."
+				"借助合成单元多方块结构，你可以自动化任何配方。"
 				""
-				"Use the AE2 guide, or hold [G] while hovering over an item for more information."
+				"使用AE2指南，或在悬停于物品上时按住[G]以获取更多信息。"
 			]
 			icon: "ae2:crafting_unit"
 			id: "69FF98931C1012F1"

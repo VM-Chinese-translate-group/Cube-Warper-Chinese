@@ -30,7 +30,7 @@
 			tasks: [{
 				dimension: "hexahedron:the_edge_of_reality"
 				id: "2ED5ED791A2C45B0"
-				title: "Enter: &lThe Edge of Reality"
+				title: "进入：&l现实边缘"
 				type: "dimension"
 			}]
 			title: "欢迎来到&k999&r号维度: &lThe Edge of Reality"
@@ -111,34 +111,34 @@
 		}
 		{
 			dependencies: ["57121F1DD7739B2D"]
-			description: ["In a abandonned Hexahedron there sits a Broken Vector Operator..."]
+			description: ["在废弃的立方体中，静静地躺着一个破碎的矢量算子……"]
 			hide_until_deps_complete: true
 			id: "5B67DE1C52A6C4AD"
 			size: 2.0d
-			subtitle: "&oParallel Cowboy Universe"
+			subtitle: "&o平行牛仔宇宙"
 			tasks: [{
 				id: "043A62FF5C123A3A"
 				item: "kubejs:vector_operator_infinite_empty"
 				type: "item"
 			}]
-			title: "The Infinity Vector"
+			title: "无限矢量"
 			x: -5.0d
 			y: 11.0d
 		}
 		{
 			dependencies: ["5B67DE1C52A6C4AD"]
 			description: [
-				"The Broken Vector Operator can be repaired, but this process needs to be executed fast and properly planned beforehand."
+				"损坏的矢量算子可以修复，但这个过程需要快速进行，事先做好妥善计划。"
 				""
-				"There are twelve total recipe steps that need to happen in order."
+				"总共有十二个步骤，需要按顺序完成。"
 				""
-				"The twelfth and final step is to place the Broken Vector Operator back on the Vector Tuner &lwithin 10 minutes&r."
+				"第十二步也是最后一步，是在10分钟内将损坏的矢量算子放回矢量调谐器上。"
 				""
-				"At any point you can place the unfinished Vector back on the Vector Tuner to reset the time and start over at step one."
+				"在任何时候，你都可以将未完成的矢量放回矢量调谐器上来重置时间并从第一步重新开始。"
 				""
-				"This will not be easy, but you made it this far. Plan ahead and you will be more than capable of doing this."
+				"这并不容易，但你已经走到了这一步。提前规划，你完全有能力做到。"
 				""
-				"You got this, best of luck!"
+				"你能行，祝你好运！"
 			]
 			icon: "ae2:singularity"
 			id: "6483A804AEE2CFED"
@@ -223,7 +223,7 @@
 		{
 			dependencies: ["6483A804AEE2CFED"]
 			description: [
-				"If you would somehow lose the Broken Vector in any way, you can use the following command while standing next to the Vector Tuner to reset the Broken Vector:"
+				"如果你不慎丢失了破损矢量，你可以站在向量调谐器旁边使用以下命令来重置破损矢量："
 				""
 				"/function hexahedron:vector_restore"
 			]
@@ -232,18 +232,18 @@
 			size: 0.5d
 			tasks: [{
 				id: "397F12AA87C8F81B"
-				title: "Understood"
+				title: "明白"
 				type: "checkmark"
 			}]
-			title: "Lost Vector Reset"
+			title: "迷失矢量重置"
 			x: -4.0d
 			y: 20.25d
 		}
 		{
 			description: [
-				"The true nature of the Edge of Reality is undocumented."
+				"现实边缘的真实本质并无记载。"
 				""
-				"You will only know what there is to do here once you visit this destination..."
+				"只有当你造访这个目的地后，你才会知道这里有什么可做的……"
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "6C52C4A4BFFE9BF0"
@@ -253,7 +253,7 @@
 				title: "我必须进一步调查"
 				type: "checkmark"
 			}]
-			title: "The Edge of Reality"
+			title: "现实边缘"
 			x: -5.0d
 			y: 8.0d
 		}

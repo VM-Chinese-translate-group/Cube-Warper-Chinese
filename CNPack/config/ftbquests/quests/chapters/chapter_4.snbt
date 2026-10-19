@@ -68,7 +68,7 @@
 		}
 		{
 			dependencies: ["1F2CA8F24F6AFB93"]
-			description: ["The shrine in the brimwood planes will erupt and spew out a Blaze if a ignited TNT is dropped into the central hole."]
+			description: ["在硫磺大陆的神龛里，如果将点燃的TNT丢入中央的洞中，神龛就会喷发并喷出烈焰人。"]
 			id: "743EC92ABFF82A3E"
 			rewards: [{
 				id: "1BBA55D5C7FA6270"
@@ -76,7 +76,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "&oMay all your Bacon Burn"
+			subtitle: "&o愿你的培根都烤焦"
 			tasks: [
 				{
 					id: "336A07B79810CB73"
@@ -89,7 +89,7 @@
 					type: "item"
 				}
 			]
-			title: "Catching a Blaze"
+			title: "捕捉烈焰人"
 			x: -11.5d
 			y: 10.5d
 		}
@@ -160,8 +160,8 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Runes can be made from Mystical Petals in combination with mana."
-				"You will just need to find flowers in the right colours."
+				"符文可以通过神秘花瓣与魔力结合制作。"
+				"你只需要找到正确颜色的花朵。"
 			]
 			icon: "botania:runic_altar"
 			id: "0921248B4773650A"
@@ -219,10 +219,10 @@
 			tasks: [{
 				dimension: "hexahedron:brimstone_veil"
 				id: "1FA82804FB168091"
-				title: "Enter dimension 10: &lThe Brimwood Planes"
+				title: "进入10号维度: &l硫磺大陆"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 10: &lThe Brimwood Planes"
+			title: "欢迎来到10号维度: &l硫磺大陆"
 			x: -13.0d
 			y: 7.5d
 		}
@@ -247,9 +247,9 @@
 				"5FADC584E46C9392"
 			]
 			description: [
-				"Glowstone can be created in the Spirit Crucible and melted in the Magma Crucible for liquid Energised Glowstone."
+				"荧石可用精魂坩埚制造，并在熔岩炉中熔化为液态充能荧石。"
 				""
-				"Energised Glowstone is a major component in the creation of Blaze Fuel."
+				"充能荧石是制造烈焰燃料的主要成分。"
 			]
 			icon: "thermal:glowstone_bucket"
 			id: "4555E52C2484D80A"
@@ -351,11 +351,11 @@
 		{
 			dependencies: ["7A7CCA02D1D6DE9D"]
 			description: [
-				"Crushing Wheels are not only able to Crush Blaze burners into Blaze Dust. But they are also extremely efficient at crushing down rocks quickly."
+				"粉碎轮不仅能将烈焰人燃烧室粉碎成烈焰粉，在快速粉碎岩石方面也极其高效。"
 				""
-				"A set of Crushing Wheels at full speed can go through stacks of stone in a matter of seconds."
+				"一对全速运转的粉碎轮可以在几秒钟内处理掉成组的石头。"
 				""
-				"This should allow you to crush the different stone types from the different dimensions extremely quickly."
+				"这应该能让你极其迅速地粉碎来自不同维度的各种石头。"
 			]
 			id: "3CDFB7634E1757EC"
 			rewards: [{
@@ -399,7 +399,7 @@
 		}
 		{
 			dependencies: ["585121A406995B35"]
-			description: ["在这个维度中你偶尔能找到符文树。确保留一些不要砍掉，以便采集它们的树液。"]
+			description: ["在这个维度中你偶尔能找到符文树。确保留一些不要砍掉，以便采集它们的树脂。"]
 			id: "3566CE49C98A4730"
 			rewards: [{
 				id: "457894353EAB5716"
@@ -442,7 +442,7 @@
 					type: "item"
 				}
 			]
-			title: "符文树液"
+			title: "符文树脂"
 			x: 11.5d
 			y: 10.5d
 		}
@@ -466,8 +466,8 @@
 		{
 			dependencies: ["50FD9623DE826974"]
 			description: [
-				"Blood combined with any Quartz Dust in the Crystallizer "
-				"will result in Blood Quartz."
+				"在结晶器中，将血液与任何石英粉结合，"
+				"即可得到玫瑰石英。"
 			]
 			icon: "create:rose_quartz"
 			id: "69E8E5DC69DEBAB1"
@@ -476,7 +476,7 @@
 				item: "brewinandchewin:bloody_mary"
 				type: "item"
 			}]
-			subtitle: "&oEvil Create"
+			subtitle: "&o邪恶造物"
 			tasks: [
 				{
 					id: "7CA0416F545CFFAD"
@@ -497,7 +497,7 @@
 				"69E8E5DC69DEBAB1"
 				"1143F172BCE0BC82"
 			]
-			description: ["Mechanical Crafting is needed in order to make the Crushing Wheels."]
+			description: ["制作粉碎轮需要动力合成。"]
 			id: "7A7CCA02D1D6DE9D"
 			rewards: [{
 				id: "7222765EB3AD42C4"
@@ -511,7 +511,7 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
-			title: "Mechanical Crafting"
+			title: "动力合成"
 			x: -4.0d
 			y: 13.0d
 		}
@@ -604,7 +604,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "&o\"I Didn't Enjoy Eidolon\""
+			subtitle: "&o“我不喜欢幻梦”"
 			tasks: [{
 				id: "4DEF6B201AD59501"
 				item: "malum:spirit_crucible"
@@ -712,18 +712,18 @@
 		{
 			dependencies: ["40236AE18FD2B000"]
 			description: [
-				"Gummy Rings can be duplicated by spouting them with a small amount of Lumisene."
+				"软糖圈可以通过喷洒少量荧光液进行复制。"
 				""
-				"This should allow you to create infinite Lumisene with the right setup."
+				"这应该能让你在合适的装置下制造出无限的荧光液。"
 			]
 			icon: "alexscaves:gumball_pile"
 			id: "2C8A8C043BF486A1"
 			tasks: [{
 				id: "2A4274ED9EE69CB0"
-				title: "I have cycled the gummies"
+				title: "我已将软糖循环"
 				type: "checkmark"
 			}]
-			title: "The Infinite Gummy Cycle"
+			title: "无限软糖循环"
 			x: 8.0d
 			y: 14.5d
 		}
@@ -792,7 +792,7 @@
 		}
 		{
 			dependencies: ["2BBB2BCBE8E363B8"]
-			description: ["With the Metallurgic Infuser you will be able to make Control Circuits."]
+			description: ["使用冶金灌注机，你能够制作控制电路。"]
 			id: "16D1607818EA293D"
 			rewards: [{
 				id: "65149E5CC6918543"
@@ -1025,9 +1025,9 @@
 				"5EF27D3655B2D23D"
 			]
 			description: [
-				"By placing Bulk Fermenters in a column and heating them from below, you can make Blaze Fuel."
+				"通过将大型发酵储罐纵向排列并从下方加热，你就可以开始制造烈焰燃料。"
 				""
-				"Items must be pushed into the structure by hoppers."
+				"物品必须由漏斗送入该结构。"
 			]
 			icon: "createdieselgenerators:bulk_fermenter"
 			id: "4949402D803E7D7C"
@@ -1037,7 +1037,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "&oFermenting in Bulk"
+			subtitle: "&o批量发酵"
 			tasks: [
 				{
 					id: "3EBCE9617DF4EB6D"
@@ -1069,7 +1069,7 @@
 					type: "item"
 				}
 			]
-			title: "Bulk Fermenter"
+			title: "大型发酵储罐"
 			x: -4.0d
 			y: 29.0d
 		}
@@ -1091,7 +1091,7 @@
 		}
 		{
 			dependencies: ["3CDFB7634E1757EC"]
-			description: ["Blaze Burners can be crushed using Crushing Wheels to yield Blaze Powder and Blaze Rods."]
+			description: ["可以使用粉碎轮粉碎烈焰人燃烧室，从而获得烈焰粉和烈焰棒。"]
 			icon: "minecraft:blaze_rod"
 			id: "5EF27D3655B2D23D"
 			tasks: [
@@ -1121,9 +1121,9 @@
 				"743EC92ABFF82A3E"
 			]
 			description: [
-				"With Blaze Burners it is possible to extract the iron from the endless blood ocean located in dimension 16."
+				"借助烈焰人燃烧室，你可以从位于16号维度的无尽血海中提取铁。"
 				""
-				"Where this blood came from does not seem to concern you..."
+				"至于这些血从何而来，你似乎并不关心……"
 			]
 			icon: "thermal:iron_dust"
 			id: "17D1A9962C519245"
@@ -1272,9 +1272,9 @@
 		{
 			dependencies: ["1F2CA8F24F6AFB93"]
 			description: [
-				"A stone generator in this dimension will generate Brimstone."
+				"在这个维度中，刷石机会产生硫磺石。"
 				""
-				"Crushing it will yeild Netherrack, Sulfur and a tiny amount of Cobalt."
+				"粉碎它可获得下界岩、硫粉和少量钴。"
 			]
 			icon: "biomesoplenty:brimstone"
 			id: "38561DF4074FA9DC"
@@ -1377,7 +1377,7 @@
 					type: "item"
 				}
 			]
-			title: "Infinite Sap Extraction"
+			title: "无限树脂提取"
 			x: 10.0d
 			y: 12.5d
 		}

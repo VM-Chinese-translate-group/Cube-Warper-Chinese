@@ -11,7 +11,7 @@
 	quests: [
 		{
 			dependencies: ["33166A16A7F37C34"]
-			description: ["Warp Flux can be used to warp some materials into others."]
+			description: ["扭曲能流可用于将某些材料转化为其他材料。"]
 			id: "76E7F42F53A92906"
 			tasks: [{
 				id: "57846CBA872E6F50"
@@ -27,9 +27,9 @@
 				"7391519637010467"
 			]
 			description: [
-				"Pure Darkness is an important crafing ingredient."
+				"纯粹黑暗是一种重要的合成材料。"
 				""
-				"Read the Conducting Rituals book on how to preform this ritual."
+				"阅读仪式书，了解如何执行此仪式。"
 			]
 			id: "5A06D773028BC9D2"
 			rewards: [{
@@ -44,7 +44,7 @@
 				item: "alexscaves:pure_darkness"
 				type: "item"
 			}]
-			title: "Ritual of Darkness"
+			title: "黑暗仪式"
 			x: 0.0d
 			y: 31.0d
 		}
@@ -79,13 +79,13 @@
 			}]
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "&oTo Odin, from Odin"
+			subtitle: "&o致奥丁，来自奥丁"
 			tasks: [{
 				id: "0F8BCFE391ECFEB3"
 				item: "incision:vile_fang"
 				type: "item"
 			}]
-			title: "The Weeping Well"
+			title: "哭泣之井"
 			x: 8.0d
 			y: 18.0d
 		}
@@ -137,7 +137,7 @@
 					type: "item"
 				}
 			]
-			title: "Breaking Out the Crimson Eyes"
+			title: "打破绯红之眼"
 			x: -8.0d
 			y: 18.0d
 		}
@@ -152,10 +152,10 @@
 			tasks: [{
 				dimension: "hexahedron:carrion_485"
 				id: "20F4487AFE6033BF"
-				title: "Enter dimension 64: &lCarrion-485"
+				title: "进入64号维度: &l腐肉-485"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 64: &lCarrion-485"
+			title: "欢迎来到64号维度: &l腐肉-485"
 			x: -8.0d
 			y: 9.0d
 		}
@@ -195,7 +195,7 @@
 				"33166A16A7F37C34"
 				"00F0B2F7923BBDAD"
 			]
-			description: ["Dark Steel is needed for multiple recipes on the tech side of this chapter."]
+			description: ["本章科技部分的多种配方都需要用到玄钢。"]
 			icon: "enderio:dark_steel_ingot"
 			id: "3B641BF9DC84200A"
 			tasks: [
@@ -210,7 +210,7 @@
 					type: "item"
 				}
 			]
-			title: "Dark Steel"
+			title: "玄钢"
 			x: 11.0d
 			y: 16.0d
 		}
@@ -240,9 +240,9 @@
 				"06170C731F74C2A1"
 			]
 			description: [
-				"When a Void Soul Knight in the Forsaken Planes is hit with a Burrowing Arrow, a piece of its armor will be chipped off."
+				"在被遗弃的世界中，当虚空魂骑士被采掘箭击中时，它的一块护甲会被击落。"
 				""
-				"The Forsaken Slag can be picked up and used to make Forsaken Bronze or Soularium."
+				"被遗弃的矿渣可以拾取，并用于制作被遗弃青铜或灵金。"
 			]
 			icon: "darkerdepths:forsaken_bronze_scrap"
 			id: "690B3942936F5A31"
@@ -269,7 +269,7 @@
 					type: "item"
 				}
 			]
-			title: "Obtaining Forsaken Bronze"
+			title: "获取遗弃青铜"
 			x: -20.0d
 			y: 15.0d
 		}
@@ -280,15 +280,15 @@
 				"4D120E3BFAD52367"
 			]
 			description: [
-				"Using the Ritual Circle, you can bind a Crimson Eye inside a Vector Operator. Where this will bring you is unknown."
+				"使用仪式圆环，你可以将绯红之眼绑定在矢量算子内。这将把你带往何处尚不可知。"
 				""
-				"There is only one way to find out..."
+				"只有一种方法能揭晓答案……"
 			]
 			icon: "kubejs:vector_operator_eye"
 			id: "2EDCB3D5FE954B4A"
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "&oDivided by Zero"
+			subtitle: "&o除以零"
 			tasks: [{
 				id: "4D244C426E1CD9E1"
 				item: "kubejs:vector_operator_eye"
@@ -308,10 +308,10 @@
 			tasks: [{
 				dimension: "hexahedron:forsaken_planes"
 				id: "05F1BA3DDDA17DA2"
-				title: "Enter dimension 17: &lThe Forsaken Planes"
+				title: "进入17号维度: &l被遗弃的世界"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 17: &lThe Forsaken Planes"
+			title: "欢迎来到17号维度: &l被遗弃的世界"
 			x: -20.0d
 			y: 9.0d
 		}
@@ -326,10 +326,10 @@
 			tasks: [{
 				dimension: "hexahedron:lavender_fields"
 				id: "4AD0ECB8CDF661CD"
-				title: "Enter dimension 96: &lLavender Fields"
+				title: "进入96号维度: &l薰衣草花田"
 				type: "dimension"
 			}]
-			title: "Welcome to dimension 96: &lLavender Fields"
+			title: "欢迎来到96号维度: &l薰衣草花田"
 			x: 8.0d
 			y: 9.0d
 		}
@@ -386,7 +386,7 @@
 		}
 		{
 			dependencies: ["3AF072EAB2673491"]
-			description: ["The Alloy Smelter will allow you to make Reinforced Alloy and Solarium."]
+			description: ["合金炉可让你制造强化合金和阳光合金。"]
 			id: "2E44834F6BA2F4C0"
 			rewards: [{
 				id: "5B5B4CCFC5F895A6"
@@ -433,9 +433,9 @@
 				"41DD32EB5E41B666"
 			]
 			description: [
-				"In order to start conducting rituals, you will need to create a Desolate Dagger."
+				"要开始进行仪式，你需要制作一把荒芜匕首。"
 				""
-				"After that Read the book on how to use the ritual circle carefully."
+				"之后，请仔细阅读那本关于如何使用仪式圆环的书。"
 			]
 			icon: {
 				Count: 1
@@ -465,7 +465,7 @@
 			]
 			shape: "diamond"
 			size: 3.0d
-			subtitle: "&oWe are Friends. Welcome. Sit and Rest."
+			subtitle: "&o我们是朋友。欢迎。坐下休息吧。"
 			tasks: [
 				{
 					id: "22535DA06CBFEE40"
@@ -497,9 +497,9 @@
 		{
 			dependencies: ["657795D12BDBF335"]
 			description: [
-				"Alpha Particles can be made in the Combiner from the Alpha flowers found in this dimension."
+				"α粒子可以在结合器中由该维度中发现的α花制成。"
 				""
-				"Note that both the Alpha Rose and the Alpha Dandelion can be produced in the Phytogenic Insolator."
+				"请注意，α玫瑰和α蒲公英都可以在有机灌注器中生产。"
 			]
 			icon: "kubejs:alpha_particles"
 			id: "181F1947B08FFF44"
@@ -525,7 +525,7 @@
 					type: "item"
 				}
 			]
-			title: "Alpha Particles"
+			title: "α粒子"
 			x: 22.5d
 			y: 13.5d
 		}
@@ -593,7 +593,7 @@
 					type: "item"
 				}
 			]
-			title: "Duplicate that what is Missing"
+			title: "复制缺失的部分"
 			x: 2.0d
 			y: 30.0d
 		}
@@ -641,7 +641,7 @@
 					type: "item"
 				}
 			]
-			title: "Ritual of the Missing"
+			title: "失踪者仪式"
 			x: 4.0d
 			y: 29.0d
 		}
@@ -689,13 +689,13 @@
 					type: "item"
 				}
 			]
-			title: "Ritual of Binding"
+			title: "束缚仪式"
 			x: -4.0d
 			y: 29.0d
 		}
 		{
 			dependencies: ["76E7F42F53A92906"]
-			description: ["Right-clicking a Block of Mana Diamond with Warp Flux will transfrom it into a Block of Dragonstone."]
+			description: ["对魔力钻石块使用扭曲能流右键单击，即可将其转化为龙石块。"]
 			icon: "botania:dragonstone"
 			id: "0361D2B79875B653"
 			rewards: [{
@@ -703,7 +703,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "&oIs this how the Elves do it?"
+			subtitle: "&o精灵们是这样做的吗？"
 			tasks: [
 				{
 					id: "494E866750FEAB3F"
@@ -721,26 +721,26 @@
 					type: "item"
 				}
 			]
-			title: "Transmuting into a Dragonstone"
+			title: "将其转化为龙石"
 			x: 8.0d
 			y: 31.0d
 		}
 		{
 			dependencies: ["76E7F42F53A92906"]
 			description: [
-				"Using Warp Flux you can now transmute blocks of metals that have been placed by Right-Clicking Warp Flux on them."
+				"使用扭曲能流你可以转化已放置下来的金属块，只需用扭曲能流右键点击它们。"
 				""
-				"You can now:"
+				"你现在可以："
 				""
-				"&lo&r Transmute Lead into Tin"
-				"&lo&r Transmute Tin into Copper"
-				"&lo&r Transmute Copper into Iron"
-				"&lo&r Transmute Iron into Silver"
-				"&lo&r Transmute Silver into Gold"
+				"&lo&r 将铅转化为锡"
+				"&lo&r 将锡转化为铜"
+				"&lo&r 将铜转化为铁"
+				"&lo&r 将铁转化为银"
+				"&lo&r 将银转化为金"
 			]
 			icon: "malum:cthonic_gold_fragment"
 			id: "53536FA9268ECC39"
-			subtitle: "&oFull Metal Alchemist"
+			subtitle: "&o钢之炼金术师"
 			tasks: [
 				{
 					id: "2D3F02B65C161739"
@@ -763,7 +763,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "Lead into Gold"
+			title: "点铅成金"
 			x: 6.0d
 			y: 28.0d
 		}
@@ -780,7 +780,7 @@
 		}
 		{
 			dependencies: ["23B11C5E9631918A"]
-			description: ["You can fill a Bottle with Ender Air by Right-clicking it anywhere in the Lavender Fields"]
+			description: ["你可以在薰衣草花田的任何位置右键点击瓶子，将瓶子装满末地空气。"]
 			icon: "botania:ender_air_bottle"
 			id: "736B7720A9B289FC"
 			rewards: [{
@@ -788,7 +788,7 @@
 				item: "kubejs:tiny_party_popper"
 				type: "item"
 			}]
-			subtitle: "&oBottle of Nothing"
+			subtitle: "&o虚无之瓶"
 			tasks: [
 				{
 					id: "244D10215D54D571"
@@ -801,13 +801,13 @@
 					type: "item"
 				}
 			]
-			title: "Ender Air Bottle"
+			title: "瓶装末地空气"
 			x: 4.0d
 			y: 13.5d
 		}
 		{
 			dependencies: ["23B11C5E9631918A"]
-			description: ["Since Dreamwood grows naturally in the Lavender Fields, no portal is needed to trade for it."]
+			description: ["由于梦之木在薰衣草花田中自然生长，因此无需通过传送门进行交易即可获得。"]
 			id: "41DD32EB5E41B666"
 			rewards: [{
 				id: "1002638BD1CD5424"
@@ -828,7 +828,7 @@
 				"4F8D72BB37D8D92E"
 				"5A06D773028BC9D2"
 			]
-			description: ["The Occult Gem can be made with a Spirit Infusion Altar."]
+			description: ["神秘宝石可以通过精魂祭坛灌注制作。"]
 			id: "3F4EC0FB4D799F62"
 			rewards: [{
 				id: "5F7BFA50AA53EC9A"
@@ -856,7 +856,7 @@
 				item: "kubejs:party_popper"
 				type: "item"
 			}]
-			subtitle: "&oThe Words Become Flesh"
+			subtitle: "&o言语化为血肉"
 			tasks: [{
 				id: "0995CC766946E503"
 				item: "alexscaves:forsaken_idol"
@@ -871,9 +871,9 @@
 				"5A06D773028BC9D2"
 			]
 			description: [
-				"Supercomputers are one of the final items."
+				"超级计算机是最终物品之一。"
 				""
-				"Make sure you have its components properly automated before proper production."
+				"在正式生产之前，请确保其组件已实现适当的自动化。"
 			]
 			id: "39CD55C645EF2F8E"
 			rewards: [{
@@ -894,9 +894,9 @@
 		{
 			dependencies: ["394A9F2BBF941C4E"]
 			description: [
-				"In Carrion-485 the occasional Carrion Maw can be found in the ground."
+				"在腐肉-485中，偶尔能在地面上发现腐肉之喉。"
 				""
-				"Feeding it Chocolate Cake will make it spit out a Sweet Tooth."
+				"喂它巧克力蛋糕会让它吐出一颗蛀牙。"
 				""
 				"{image:kubejs:textures/questbook/book_images/floor_maw.png width:192 height:108 align:center}"
 			]
@@ -914,7 +914,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "&oWe are the Music Makers, and we are the Dreamers of Dreams"
+			subtitle: "&o我们是音乐的创造者，也是梦想的追寻者"
 			tasks: [
 				{
 					id: "135F31A7B882A62E"
@@ -927,7 +927,7 @@
 					type: "item"
 				}
 			]
-			title: "Obtaining a Sweet Tooth"
+			title: "获得蛀牙"
 			x: -14.0d
 			y: 12.0d
 		}
@@ -936,7 +936,7 @@
 				"773644DBBADB3907"
 				"52154BA08802DE96"
 			]
-			description: ["These three machines will be needed to make the Modular Reactor."]
+			description: ["制造模块化反应堆需要这三台机器。"]
 			icon: "mekanism:isotopic_centrifuge"
 			id: "7364187F70EFBB1D"
 			rewards: [{
@@ -962,7 +962,7 @@
 					type: "item"
 				}
 			]
-			title: "Nuclear Industries"
+			title: "核工业"
 			x: -4.0d
 			y: 36.5d
 		}
@@ -972,9 +972,9 @@
 				"77E7F56B8C872D13"
 			]
 			description: [
-				"You can use Error Cubes to make Antimater in the Reaction Chamber."
+				"你可以使用错误方块在反应室中制造反物质。"
 				""
-				"Crystalising Antimater will result in Atomic Alloy."
+				"将反物质结晶可获得原子合金。"
 			]
 			id: "773644DBBADB3907"
 			rewards: [{
@@ -1009,7 +1009,7 @@
 		}
 		{
 			dependencies: ["7364187F70EFBB1D"]
-			description: ["Constructing Modular Reactors will not be easy. Make sure you have its components properly automated before proper production."]
+			description: ["建造模块化反应堆并不容易。在准备生产之前，请确保其组件的自动化生产已妥善完成。"]
 			icon: "kubejs:modular_reactor"
 			id: "4D120E3BFAD52367"
 			rewards: [{
@@ -1030,13 +1030,13 @@
 					type: "item"
 				}
 			]
-			title: "Modular Reactor"
+			title: "模块化反应堆"
 			x: -4.0d
 			y: 44.0d
 		}
 		{
 			dependencies: ["6792284C323C3684"]
-			description: ["Ancient Scrap can be found all over the Forsaken Planes. Combined with Gold you can now make Netherite."]
+			description: ["远古残骸遍布被遗弃的世界。配合金锭，你现在可以制作下界合金了。"]
 			id: "390F0E7876ACC11A"
 			rewards: [{
 				id: "6C891E135A55C2BF"
@@ -1054,7 +1054,7 @@
 		}
 		{
 			dependencies: ["23B11C5E9631918A"]
-			description: ["Ender Dust can obtained by crushing End Stone."]
+			description: ["末影粉可以通过粉碎末地石获得。"]
 			icon: "ae2:ender_dust"
 			id: "00F0B2F7923BBDAD"
 			rewards: [{
@@ -1075,7 +1075,7 @@
 					type: "item"
 				}
 			]
-			title: "Ender Dust"
+			title: "末影粉"
 			x: 11.0d
 			y: 13.5d
 		}
@@ -1132,10 +1132,10 @@
 		}
 		{
 			dependencies: ["39199FC922CE2D82"]
-			description: ["Both eyes are renewable in the Spirit Altar."]
+			description: ["双眼都可以在精魂祭坛中再生。"]
 			icon: "incision:congealed_acid"
 			id: "0AFC4BD8DFC8A929"
-			subtitle: "&oEye Spy"
+			subtitle: "&o隔墙有眼"
 			tasks: [
 				{
 					id: "5CBA73A116F15E77"
@@ -1148,7 +1148,7 @@
 					type: "item"
 				}
 			]
-			title: "Renewable Eyeballs"
+			title: "可再生眼球"
 			x: -6.5d
 			y: 20.0d
 		}
