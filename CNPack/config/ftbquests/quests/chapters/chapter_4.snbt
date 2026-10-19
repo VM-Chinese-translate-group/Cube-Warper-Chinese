@@ -130,6 +130,13 @@
 		}
 		{
 			dependencies: ["41914B292526CC00"]
+			description: [
+				"The Gourmaryllis can eat anything eatable to generate mana."
+				""
+				"The Kekimurus will convert any cakes placed next to it into mana."
+				""
+				"Both these flowers can be found in dimension 24."
+			]
 			id: "1E41EDAFE5271147"
 			rewards: [{
 				id: "5C7FFF2A710B2C1C"
@@ -149,6 +156,7 @@
 					type: "item"
 				}
 			]
+			title: "Feed Your Flowers"
 			x: 4.0d
 			y: 11.0d
 		}
@@ -222,7 +230,7 @@
 				title: "进入10号维度: &l硫磺大陆"
 				type: "dimension"
 			}]
-			title: "欢迎来到10号维度: &l硫磺大陆"
+			title: "Welcome to dimension 10: &lThe Brimwood Plains"
 			x: -13.0d
 			y: 7.5d
 		}
@@ -651,6 +659,7 @@
 		}
 		{
 			dependencies: ["41914B292526CC00"]
+			description: ["All four Gummy Rings can be found in dimension 24. In a Cooking Pot they can be turned into the highly flamable Lumisene."]
 			icon: "supplementaries:lumisene_bucket"
 			id: "40236AE18FD2B000"
 			rewards: [
@@ -691,12 +700,6 @@
 				{
 					id: "06EBD0E67D65B116"
 					item: "alexscaves:gummy_ring_blue"
-					type: "item"
-				}
-				{
-					id: "657DBA0814B52BE8"
-					item: "farmersdelight:cooking_pot"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1380,6 +1383,27 @@
 			title: "无限树脂提取"
 			x: 10.0d
 			y: 12.5d
+		}
+		{
+			dependencies: ["0A96A6A3F883A86B"]
+			description: ["Using the Centrifuge you can turn Metal Swarf into lead."]
+			icon: "thermal:lead_dust"
+			id: "5F442664FA982CEF"
+			tasks: [
+				{
+					id: "6CC4F279E74A94A3"
+					item: "thermal:machine_centrifuge"
+					type: "item"
+				}
+				{
+					id: "45E29003BEDF2601"
+					item: "thermal:lead_dust"
+					type: "item"
+				}
+			]
+			title: "Renewable Lead"
+			x: -11.5d
+			y: 19.5d
 		}
 	]
 	title: "第4章"
