@@ -103,16 +103,15 @@
 		{
 			dependencies: ["65865592B7FBB1CC"]
 			description: [
-				"使用风暴群岛上的神龛，你可以利用当地天气的力量来强化特定物品。"
+				"Using the shrine in the Storm Islands, you can harness the power of the local weather to empower certain items."
 				""
-				"如下图所示，应在顶部建造一个小型避雷针结构。"
+				"A small lightning rod structure should be constructed on top as depicted in the image below."
 				""
+				"&lThe button at the base of the structure will only start the conversion if the accumulator in the lightning rod is fully charged.&r"
 				""
 				"{image:kubejs:textures/questbook/book_images/lightning_shrine.png width:190 height:108 align:center}"
 				""
-				"将你想要转化的物品放置在结构下方的基座上。"
-				""
-				"&l只有当避雷针中的蓄能器完全充满时，结构底部的按钮才会启动转化过程。&r"
+				"The item that you want to transform should be placed on the pedestal located at the lower part of the structure."
 			]
 			icon: "kubejs:bottled_lightning"
 			id: "3362A3145B9D5745"
@@ -247,13 +246,13 @@
 		{
 			dependencies: ["3362A3145B9D5745"]
 			description: [
-				"避雷针多方块结构已略有改进。"
+				"The Lightning Rod multiblock has been slightly improved."
 				""
-				"现在当人造闪电（如闪电电荷）击中钢栅栏时，它也能发电。"
+				"It now also generates power when artificial lightnig like from a lightning charge hits the top of one of the steel fences."
 				""
-				"&l闪电神龛可将铜粉转化为闪电电荷。&r"
+				"&lThe Lightning Shrine can convert Copper Dust into a Lightning Charge.&r"
 				""
-				"使用这种方法，你需要消耗能量来产生能量。但每次雷击应能净产出约200,000 RF，具体取决于你导出避雷针能量的速度。"
+				"Using this method you will need power to make power. But each lightning strike should yeild a net positive of ~200.000 RF depending on how fast you can drain the Lighting Rod."
 			]
 			icon: "thermal:lightning_charge"
 			id: "500C36B667B15D5C"
