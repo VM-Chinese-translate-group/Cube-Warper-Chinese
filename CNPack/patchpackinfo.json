@@ -4,7 +4,7 @@
   "description": "xxx整合包简体中文汉化，记得额外下载i18n模组",
   "modpack": {
     "name": "英文的整合包名字",
-    "versionRange": "[1.13,)"
+    "versionRange": "[1.14,)"
   },
   "authors": [
     "VM汉化组"

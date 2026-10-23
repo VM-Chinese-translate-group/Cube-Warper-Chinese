@@ -116,6 +116,7 @@
 				{
 					id: "6FA391211B071A7C"
 					item: "tconstruct:seared_fuel_tank"
+					optional_task: true
 					type: "item"
 				}
 				{
