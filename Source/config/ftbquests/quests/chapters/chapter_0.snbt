@@ -13,11 +13,6 @@
 			description: ["Board the Hexahedron and press the big red button!"]
 			icon: "kubejs:launch_button"
 			id: "30A0ACC1C6D738A8"
-			rewards: [{
-				id: "585E03F8815FFB85"
-				item: "supplementaries:confetti_popper"
-				type: "item"
-			}]
 			size: 2.0d
 			subtitle: "&oPressing the Big Red Button"
 			tasks: [{
@@ -42,11 +37,18 @@
 				"{image:kubejs:textures/questbook/book_images/vectors.png width:154 height:122 align:center}"
 			]
 			id: "43823F2E6C3DD6A1"
-			rewards: [{
-				id: "265ACAB0D1BDA723"
-				item: "kubejs:emergency_fuses"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "265ACAB0D1BDA723"
+					item: "kubejs:emergency_fuses"
+					type: "item"
+				}
+				{
+					id: "40540DFD4AFB7A9F"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "&oSee Where it Takes you"
