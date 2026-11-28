@@ -29,7 +29,10 @@
 			description: [
 				"Pure Darkness is an important crafing ingredient."
 				""
-				"Read the Conducting Rituals book on how to preform this ritual."
+				"In order to make Pure Darkness you will need Void Salts."
+				"Jumping into the Weeping Well or throwing the Encyclopedia Arcana into the Weeping Well will reveal the recipe for Void Salts to you."
+				""
+				"Read the Conducting Rituals book on how to preform the ritual that summons Pure Darkness."
 			]
 			id: "5A06D773028BC9D2"
 			rewards: [{
@@ -777,7 +780,11 @@
 		}
 		{
 			dependencies: ["23B11C5E9631918A"]
-			description: ["You can fill a Bottle with Ender Air by Right-clicking it anywhere in the Lavender Fields"]
+			description: [
+				"You can fill a Bottle with Ender Air by Right-clicking it anywhere in the Lavender Fields."
+				""
+				"This can be automated by making a Deployer Right-click a bottle on any solid block in the Lavender Fields."
+			]
 			icon: "botania:ender_air_bottle"
 			id: "736B7720A9B289FC"
 			rewards: [{
@@ -810,17 +817,25 @@
 		{
 			dependencies: ["23B11C5E9631918A"]
 			description: ["Since Dreamwood grows naturally in the Lavender Fields, no portal is needed to trade for it."]
+			icon: "botania:dreamwood_log"
 			id: "41DD32EB5E41B666"
 			rewards: [{
 				id: "1002638BD1CD5424"
 				item: "kubejs:tiny_party_popper"
 				type: "item"
 			}]
-			tasks: [{
-				id: "1E740ADEF62850D4"
-				item: "botania:dreamwood_log"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1E740ADEF62850D4"
+					item: "botania:dreamwood_log"
+					type: "item"
+				}
+				{
+					id: "523C69FAD6E87734"
+					item: "biomesoplenty:jacaranda_sapling"
+					type: "item"
+				}
+			]
 			x: 6.0d
 			y: 13.5d
 		}
