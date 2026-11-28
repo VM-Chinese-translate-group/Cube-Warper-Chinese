@@ -628,7 +628,14 @@
 		}
 		{
 			dependencies: ["59B914C684A5EE4C"]
-			description: ["借助核能熔炉，裂变核心现在可以再生了。"]
+			description: [
+				"Using the Nuclear Furnace Fissile Cores are now renewable."
+				""
+				"You now can also automate the Nuclear Furnace with the in- and outputs as shown in the image below:"
+				""
+				""
+				"{image:kubejs:textures/questbook/book_images/nuclear_furnace.png width:192 height:108 align:center}"
+			]
 			icon: "kubejs:empty_shell"
 			id: "66D36B4E2249E0C2"
 			rewards: [

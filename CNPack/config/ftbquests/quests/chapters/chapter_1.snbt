@@ -331,6 +331,11 @@
 					item: "exposure:photograph_frame"
 					type: "item"
 				}
+				{
+					id: "36A3662B9EEC85DF"
+					item: "exposure:album"
+					type: "item"
+				}
 			]
 			subtitle: "&o拍一张拍立得照片"
 			tasks: [{
@@ -357,14 +362,20 @@
 		}
 		{
 			dependencies: ["331319E9F6BD173A"]
+			description: [
+				"Any stone generator in this dimension will generate Red Sandstone."
+				""
+				"In the next chapter you will be able to crush Red Sandstone into Raw Copper."
+			]
+			icon: "minecraft:raw_copper"
 			id: "39401DE3C32F95EC"
-			shape: "gear"
-			subtitle: "&o近乎自动合成"
+			shape: "octagon"
 			tasks: [{
-				id: "2A402D5C1A9C5C35"
-				item: "forestry:worktable"
+				id: "14EAF61EACB408B9"
+				item: "minecraft:red_sandstone"
 				type: "item"
 			}]
+			title: "Renewable Copper"
 			x: -5.5d
 			y: 14.0d
 		}

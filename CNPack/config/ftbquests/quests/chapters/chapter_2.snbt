@@ -546,12 +546,9 @@
 					type: "item"
 				}
 				{
-					count: 4L
 					id: "123C506D165C7834"
-					item: {
-						Count: 4
-						id: "minecraft:campfire"
-					}
+					item: "minecraft:campfire"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -956,6 +953,8 @@
 				"You can create Flawed Budding Certus blocks using the Crystallizer."
 				""
 				"The Growth Accelerator will need to be hooked up to the ME-System and will speed up the growth of the crystals significantly."
+				""
+				"Charged Certus Quartz can be put into the Crystal Fixer. The Crystal Fixer will use the Charged Certus Quartz to repair the attached budding certus block all the way up to its flawed state."
 			]
 			icon: "ae2:flawed_budding_quartz"
 			id: "114FBF1B629A980D"
@@ -968,6 +967,11 @@
 				{
 					id: "4D99F47F1EF86F1B"
 					item: "ae2:growth_accelerator"
+					type: "item"
+				}
+				{
+					id: "7B79BE96F2534EE3"
+					item: "expatternprovider:crystal_fixer"
 					type: "item"
 				}
 				{
