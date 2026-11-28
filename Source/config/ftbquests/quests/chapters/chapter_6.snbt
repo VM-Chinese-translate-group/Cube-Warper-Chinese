@@ -111,7 +111,11 @@
 		}
 		{
 			dependencies: ["57121F1DD7739B2D"]
-			description: ["In a abandonned Hexahedron there sits a Broken Vector Operator..."]
+			description: [
+				"When walking straight south from the Hexahedron in the Edge of Reality, you can find an abandoned structure."
+				""
+				"In a abandonned Hexahedron there sits a Broken Vector Operator..."
+			]
 			hide_until_deps_complete: true
 			id: "5B67DE1C52A6C4AD"
 			size: 2.0d
@@ -163,51 +167,61 @@
 				{
 					id: "70FA1855D14E6E08"
 					item: "kubejs:vector_operator_step2"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "44C0DA96017B5C03"
 					item: "kubejs:vector_operator_step3"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "6EC273C30D58BE88"
 					item: "kubejs:vector_operator_step4"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "28F2C09078447525"
 					item: "kubejs:vector_operator_step5"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "6CF0034C64A6AF9A"
 					item: "kubejs:vector_operator_step6"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "7F27E466BF733EE4"
 					item: "kubejs:vector_operator_step7"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "4FD68E976E86384F"
 					item: "kubejs:vector_operator_step8"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "5D667B0D940C60B7"
 					item: "kubejs:vector_operator_step9"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "0F2F264B806F3AC0"
 					item: "kubejs:vector_operator_step10"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "71C1A26E39886E20"
 					item: "kubejs:vector_operator_step11"
+					optional_task: true
 					type: "item"
 				}
 				{
